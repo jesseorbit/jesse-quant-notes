@@ -47,7 +47,7 @@ def test_keyword_matching():
 def test_fuzzy_matching():
     """Test fuzzy matching engine."""
     print("\n=== Testing Fuzzy Matching ===")
-    
+
     # Create mock markets
     poly_markets = [
         StandardMarket(
@@ -69,37 +69,37 @@ def test_fuzzy_matching():
             url="https://polymarket.com/event/trump-2024"
         ),
     ]
-    
-    opinion_markets = [
+
+    kalshi_markets = [
         StandardMarket(
-            platform="OPINION",
-            market_id="op-1",
+            platform="KALSHI",
+            market_id="k-1",
             title=normalize_title("Bitcoin price above 100k before 2025"),
             price_yes=0.32,
             price_no=0.68,
             volume=30000,
-            url="https://opinion.trade/market/btc-100k"
+            url="https://kalshi.com/market/btc-100k"
         ),
         StandardMarket(
-            platform="OPINION",
-            market_id="op-2",
+            platform="KALSHI",
+            market_id="k-2",
             title=normalize_title("Donald Trump elected president 2024"),
             price_yes=0.48,
             price_no=0.52,
             volume=75000,
-            url="https://opinion.trade/market/trump-2024"
+            url="https://kalshi.com/market/trump-2024"
         ),
     ]
-    
+
     # Test matching
     matcher = MarketMatcher(similarity_threshold=80.0)
-    matches = matcher.find_matches(poly_markets, opinion_markets)
-    
+    matches = matcher.find_matches(poly_markets, kalshi_markets)
+
     print(f"Found {len(matches)} matches:")
-    for poly, opinion, score in matches:
+    for poly, kalshi, score in matches:
         print(f"\nMatch Score: {score:.1f}")
         print(f"  Poly: {poly.title}")
-        print(f"  Opinion: {opinion.title}")
+        print(f"  Kalshi: {kalshi.title}")
 
 
 def test_arbitrage_calculation():
@@ -117,22 +117,22 @@ def test_arbitrage_calculation():
         url="https://polymarket.com/event/btc-100k"
     )
     
-    opinion_market = StandardMarket(
-        platform="OPINION",
-        market_id="op-1",
+    kalshi_market = StandardMarket(
+        platform="KALSHI",
+        market_id="k-1",
         title="bitcoin price above 100k before 2025",
         price_yes=0.32,
         price_no=0.68,
         volume=30000,
-        url="https://opinion.trade/market/btc-100k"
+        url="https://kalshi.com/market/btc-100k"
     )
     
     # Calculate costs
-    cost_1 = poly_market.price_yes + opinion_market.price_no  # 0.65 + 0.68 = 1.33 (no arb)
-    cost_2 = poly_market.price_no + opinion_market.price_yes  # 0.35 + 0.32 = 0.67 (arb!)
+    cost_1 = poly_market.price_yes + kalshi_market.price_no  # 0.65 + 0.68 = 1.33 (no arb)
+    cost_2 = poly_market.price_no + kalshi_market.price_yes  # 0.35 + 0.32 = 0.67 (arb!)
     
-    print(f"Strategy 1 (Poly YES + Opinion NO): ${cost_1:.4f}")
-    print(f"Strategy 2 (Poly NO + Opinion YES): ${cost_2:.4f}")
+    print(f"Strategy 1 (Poly YES + Kalshi NO): ${cost_1:.4f}")
+    print(f"Strategy 2 (Poly NO + Kalshi YES): ${cost_2:.4f}")
     
     if cost_2 < 0.98:
         profit = 1.0 - cost_2
@@ -145,7 +145,7 @@ def test_arbitrage_calculation():
     
     # Test with matcher
     matcher = MarketMatcher()
-    matches = [(poly_market, opinion_market, 95.0)]
+    matches = [(poly_market, kalshi_market, 95.0)]
     opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02)
     
     print(f"\nMatcher found {len(opportunities)} opportunities")

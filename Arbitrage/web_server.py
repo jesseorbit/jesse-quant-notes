@@ -14,7 +14,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from models import ArbitrageOpportunity, StandardMarket
-from services import PolymarketCollector, KalshiCollector, OpinionCollector
+from services import KalshiCollector, PolymarketCollector
 from matcher import MarketMatcher
 
 # Configure logging
@@ -41,17 +41,13 @@ cache = {
     "last_update": None,
     "poly_count": 0,
     "kalshi_count": 0,
-    "opinion_count": 0,
 }
 
 
 async def scan_markets():
     """Scan markets for arbitrage opportunities."""
-    import os
-    enable_opinion = bool(os.getenv("OPINION_API_KEY"))
-    
     logger.info("Starting market scan...")
-    
+
     # Collect data
     poly_collector = PolymarketCollector()
     kalshi_collector = KalshiCollector()
@@ -64,17 +60,9 @@ async def scan_markets():
         None, kalshi_collector.fetch_active_markets, None
     )
     
-    opinion_markets = []
-    if enable_opinion:
-        opinion_collector = OpinionCollector()
-        opinion_markets = await asyncio.get_event_loop().run_in_executor(
-            None, opinion_collector.fetch_active_markets, None
-        )
-    
     # Update cache counts
     cache["poly_count"] = len(poly_markets)
     cache["kalshi_count"] = len(kalshi_markets)
-    cache["opinion_count"] = len(opinion_markets)
     
     # Match and find arbitrage
     matcher = MarketMatcher(similarity_threshold=85.0, min_common_keywords=2)
@@ -83,20 +71,6 @@ async def scan_markets():
     # Polymarket vs Kalshi
     if poly_markets and kalshi_markets:
         matches = matcher.find_matches(poly_markets, kalshi_markets)
-        if matches:
-            opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
-            all_opportunities.extend(opportunities)
-    
-    # Polymarket vs Opinion
-    if poly_markets and opinion_markets:
-        matches = matcher.find_matches(poly_markets, opinion_markets)
-        if matches:
-            opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
-            all_opportunities.extend(opportunities)
-    
-    # Kalshi vs Opinion
-    if kalshi_markets and opinion_markets:
-        matches = matcher.find_matches(kalshi_markets, opinion_markets)
         if matches:
             opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
             all_opportunities.extend(opportunities)
@@ -203,7 +177,6 @@ async def root():
             }
             .poly { background: #667eea; color: white; }
             .kalshi { background: #f59e0b; color: white; }
-            .opinion { background: #10b981; color: white; }
             .price { font-size: 1.2em; margin: 10px 0; }
             .profit { color: #10b981; font-weight: bold; }
             .button {
@@ -304,10 +277,10 @@ async def root():
                                 <a href="${opp.poly_market.url}" target="_blank" style="color: #667eea; text-decoration: none;">View Market →</a>
                             </div>
                             <div class="market">
-                                <span class="platform ${opp.opinion_market.platform.toLowerCase()}">${opp.opinion_market.platform}</span>
-                                <div style="margin-top: 10px; font-weight: 500;">${opp.opinion_market.title.substring(0, 80)}...</div>
-                                <div class="price">YES: $${opp.opinion_market.price_yes.toFixed(3)} | NO: $${opp.opinion_market.price_no.toFixed(3)}</div>
-                                <a href="${opp.opinion_market.url}" target="_blank" style="color: #667eea; text-decoration: none;">View Market →</a>
+                                <span class="platform ${opp.counter_market.platform.toLowerCase()}">${opp.counter_market.platform}</span>
+                                <div style="margin-top: 10px; font-weight: 500;">${opp.counter_market.title.substring(0, 80)}...</div>
+                                <div class="price">YES: $${opp.counter_market.price_yes.toFixed(3)} | NO: $${opp.counter_market.price_no.toFixed(3)}</div>
+                                <a href="${opp.counter_market.url}" target="_blank" style="color: #667eea; text-decoration: none;">View Market →</a>
                             </div>
                         </div>
                     </div>
@@ -342,19 +315,18 @@ async def scan():
                     "price_no": opp.poly_market.price_no,
                     "url": opp.poly_market.url,
                 },
-                "opinion_market": {
-                    "platform": opp.opinion_market.platform,
-                    "title": opp.opinion_market.title,
-                    "price_yes": opp.opinion_market.price_yes,
-                    "price_no": opp.opinion_market.price_no,
-                    "url": opp.opinion_market.url,
+                "counter_market": {
+                    "platform": opp.counter_market.platform,
+                    "title": opp.counter_market.title,
+                    "price_yes": opp.counter_market.price_yes,
+                    "price_no": opp.counter_market.price_no,
+                    "url": opp.counter_market.url,
                 },
             }
             for opp in opportunities
         ],
         "poly_count": cache["poly_count"],
         "kalshi_count": cache["kalshi_count"],
-        "opinion_count": cache["opinion_count"],
         "last_update": cache["last_update"].isoformat() if cache["last_update"] else None,
     }
 
