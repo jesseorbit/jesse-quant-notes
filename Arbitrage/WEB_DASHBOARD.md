@@ -75,7 +75,7 @@ http://localhost:8000
         "price_no": 0.35,
         "url": "https://polymarket.com/event/..."
       },
-      "counter_market": {
+      "opinion_market": {
         "platform": "KALSHI",
         "title": "bitcoin price above 100k",
         "price_yes": 0.32,
@@ -86,6 +86,7 @@ http://localhost:8000
   ],
   "poly_count": 311,
   "kalshi_count": 1523,
+  "opinion_count": 0,
   "last_update": "2025-12-22T15:17:00"
 }
 ```

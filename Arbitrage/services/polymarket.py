@@ -85,7 +85,7 @@ class PolymarketCollector:
                             
                             # CRITICAL: Filter out past markets
                             # Only get markets ending in the future
-                            end_date = market.get("end_date_iso")
+                            end_date = market.get("endDate") or market.get("endDateIso") or market.get("end_date_iso")
                             if end_date:
                                 try:
                                     end_dt = datetime.fromisoformat(end_date.replace('Z', '+00:00'))
@@ -158,20 +158,53 @@ class PolymarketCollector:
         if not isinstance(outcome_prices, list):
             outcome_prices = []
         
-        # Try to extract prices
+        # Try to extract prices using Order Book (Best Ask)
+        # We want the price to BUY (Ask).
+        # For YES: We buy at the Best Ask.
+        # For NO: We are essentially selling Yes, so we look at Best Bid? 
+        # Actually in Polymarket CTF/Binary:
+        # Price(No) = 1 - Price(Yes)
+        # To Buy No, you can mint sets (cost 1) and sell Yes (at Best Bid).
+        # So Buy Price(No) = 1.0 - Best Bid(Yes).
+        
+        best_ask = market.get("bestAsk")
+        best_bid = market.get("bestBid")
+        
+        price_yes_ask = None
+        price_no_ask = None
+        
+        if best_ask is not None:
+             try:
+                 price_yes_ask = float(best_ask)
+             except:
+                 pass
+
+        if best_bid is not None:
+            try:
+                # Buying No is equivalent to selling Yes
+                # Cost to Buy No = 1 - Sell Price of Yes
+                price_no_ask = 1.0 - float(best_bid)
+            except:
+                pass
+                
+        # Use simple outcome prices as fallback or base
+        # outcomePrices often reflects the "Last Trade" or Mid price
+        base_yes = 0.5
+        base_no = 0.5
+        
         if len(outcome_prices) >= 2:
             try:
-                # Index 0 = Yes, Index 1 = No
-                price_yes = float(outcome_prices[0])
-                price_no = float(outcome_prices[1])
-            except (ValueError, TypeError):
-                # Fallback if conversion fails
-                price_yes = 0.5
-                price_no = 0.5
-        else:
-            # Fallback: try to get from other fields
-            price_yes = float(market.get("price", 0.5))
-            price_no = 1.0 - price_yes
+                base_yes = float(outcome_prices[0])
+                base_no = float(outcome_prices[1])
+            except:
+                pass
+        elif market.get("price"):
+            base_yes = float(market.get("price"))
+            base_no = 1.0 - base_yes
+            
+        # Final Assignment
+        price_yes = price_yes_ask if price_yes_ask is not None else base_yes
+        price_no = price_no_ask if price_no_ask is not None else base_no
         
         # Extract volume (convert to float, default to 0)
         volume = float(market.get("volume", 0) or 0)
@@ -183,12 +216,25 @@ class PolymarketCollector:
         # Normalize title
         normalized_title = normalize_title(title)
         
+        # Extract End Date
+        # Gamma API uses camelCase "endDate" or "endDateIso"
+        end_date_iso = market.get("endDate") or market.get("endDateIso") or market.get("end_date_iso")
+        end_date = None
+        if end_date_iso:
+            try:
+                # Handle "2021-12-04T00:00:00Z" format
+                end_date = datetime.fromisoformat(end_date_iso.replace("Z", "+00:00"))
+            except:
+                pass
+
         return StandardMarket(
             platform="POLY",
             market_id=market_id,
             title=normalized_title,
+            raw_title=title,
             price_yes=price_yes,
             price_no=price_no,
             volume=volume,
             url=url,
+            end_date=end_date,
         )
