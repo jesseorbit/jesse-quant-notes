@@ -388,3 +388,261 @@
 2025-12-22 16:15:01,554 - __main__ - INFO - 
 === Scanning Polymarket vs Kalshi ===
 2025-12-22 16:15:01,554 - matcher - INFO - Matching 18496 Polymarket vs 76473 Opinion markets...
+2025-12-29 14:04:33,748 - __main__ - INFO - Opinion Labs API key found - scanning all 3 platforms
+2025-12-29 14:04:33,748 - __main__ - INFO - Starting data collection from available platforms...
+2025-12-29 14:04:33,749 - services.polymarket - INFO - Fetching active Polymarket markets (future markets only)...
+2025-12-29 14:04:33,800 - services.kalshi - INFO - Kalshi RSA authentication configured
+2025-12-29 14:04:33,800 - services.kalshi - INFO - Fetching Kalshi markets...
+2025-12-29 14:04:33,800 - services.opinion - INFO - Opinion Labs API key configured
+2025-12-29 14:04:33,800 - services.opinion - INFO - Fetching Opinion Labs markets via active curl...
+2025-12-29 14:04:40,223 - services.opinion - INFO - Fetching prices for 51 markets (via curl)...
+2025-12-29 14:04:40,224 - services.opinion - INFO - Starting threaded price fetch (workers=2)...
+2025-12-29 14:04:49,421 - services.opinion - INFO - Price fetch completed.
+2025-12-29 14:04:49,422 - services.opinion - INFO - Fetched 51 Opinion Labs markets total
+2025-12-29 14:05:05,192 - services.polymarket - INFO - Fetched 19365 active Polymarket markets
+2025-12-29 14:07:42,456 - services.kalshi - INFO - Fetched 227504 Kalshi markets
+2025-12-29 14:07:42,461 - services.llm_verifier - WARNING - OPENAI_API_KEY not found. LLM Verification disabled.
+2025-12-29 14:07:42,461 - __main__ - INFO - 
+=== Scanning Polymarket vs Kalshi ===
+2025-12-29 14:07:42,461 - matcher - INFO - Matching 19365 Polymarket vs 227504 Opinion markets...
+2025-12-29 14:07:43,236 - matcher - INFO - Index built. Starting optimized matching...
+2025-12-29 14:09:01,001 - matcher - INFO - Found 220 matching pairs
+2025-12-29 14:09:01,018 - matcher - INFO - Calculating arbitrage for 220 matched pairs...
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Strategy=Yes POLY ($0.02) + No KALSHI ($0.96) -> Profit $0.02
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=2.60%, Cost=$0.9740, Strategy=Yes POLY ($0.03) + No KALSHI ($0.94) -> Profit $0.03
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Strategy=Yes POLY ($0.01) + No KALSHI ($0.97) -> Profit $0.02
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Strategy=Yes POLY ($0.02) + No KALSHI ($0.96) -> Profit $0.02
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Strategy=No POLY ($0.87) + Yes KALSHI ($0.10) -> Profit $0.03
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=2.70%, Cost=$0.9730, Strategy=Yes POLY ($0.04) + No KALSHI ($0.93) -> Profit $0.03
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=6.60%, Cost=$0.9340, Strategy=Yes POLY ($0.01) + No KALSHI ($0.92) -> Profit $0.07
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=5.90%, Cost=$0.9410, Strategy=Yes POLY ($0.00) + No KALSHI ($0.94) -> Profit $0.06
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=11.10%, Cost=$0.8890, Strategy=Yes POLY ($0.05) + No KALSHI ($0.84) -> Profit $0.11
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=33.00%, Cost=$0.6700, Strategy=Yes POLY ($0.55) + No KALSHI ($0.12) -> Profit $0.33
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=21.20%, Cost=$0.7880, Strategy=Yes POLY ($0.01) + No KALSHI ($0.78) -> Profit $0.21
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=40.20%, Cost=$0.5980, Strategy=Yes POLY ($0.09) + No KALSHI ($0.51) -> Profit $0.40
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=18.00%, Cost=$0.8200, Strategy=Yes POLY ($0.01) + No KALSHI ($0.81) -> Profit $0.18
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=37.80%, Cost=$0.6220, Strategy=Yes POLY ($0.01) + No KALSHI ($0.61) -> Profit $0.38
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=33.50%, Cost=$0.6650, Strategy=Yes POLY ($0.03) + No KALSHI ($0.64) -> Profit $0.33
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=58.80%, Cost=$0.4120, Strategy=Yes POLY ($0.04) + No KALSHI ($0.37) -> Profit $0.59
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=44.80%, Cost=$0.5520, Strategy=Yes POLY ($0.02) + No KALSHI ($0.53) -> Profit $0.45
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=37.70%, Cost=$0.6230, Strategy=Yes POLY ($0.01) + No KALSHI ($0.61) -> Profit $0.38
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=31.00%, Cost=$0.6900, Strategy=Yes POLY ($0.01) + No KALSHI ($0.68) -> Profit $0.31
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=22.40%, Cost=$0.7760, Strategy=Yes POLY ($0.01) + No KALSHI ($0.77) -> Profit $0.22
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=23.10%, Cost=$0.7690, Strategy=Yes POLY ($0.01) + No KALSHI ($0.76) -> Profit $0.23
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=22.20%, Cost=$0.7780, Strategy=Yes POLY ($0.03) + No KALSHI ($0.75) -> Profit $0.22
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=30.80%, Cost=$0.6920, Strategy=Yes POLY ($0.01) + No KALSHI ($0.68) -> Profit $0.31
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=67.30%, Cost=$0.3270, Strategy=Yes POLY ($0.03) + No KALSHI ($0.30) -> Profit $0.67
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Strategy=Yes POLY ($0.01) + No KALSHI ($0.94) -> Profit $0.05
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=14.20%, Cost=$0.8580, Strategy=Yes POLY ($0.01) + No KALSHI ($0.85) -> Profit $0.14
+2025-12-29 14:09:01,018 - matcher - INFO - Arbitrage found! ROI=9.80%, Cost=$0.9020, Strategy=Yes POLY ($0.00) + No KALSHI ($0.90) -> Profit $0.10
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=14.90%, Cost=$0.8510, Strategy=Yes POLY ($0.00) + No KALSHI ($0.85) -> Profit $0.15
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=21.30%, Cost=$0.7870, Strategy=Yes POLY ($0.01) + No KALSHI ($0.78) -> Profit $0.21
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Strategy=Yes POLY ($0.00) + No KALSHI ($0.97) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Strategy=Yes POLY ($0.00) + No KALSHI ($0.97) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Strategy=Yes POLY ($0.00) + No KALSHI ($0.97) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.90%, Cost=$0.9510, Strategy=Yes POLY ($0.00) + No KALSHI ($0.95) -> Profit $0.05
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=14.60%, Cost=$0.8540, Strategy=Yes POLY ($0.00) + No KALSHI ($0.85) -> Profit $0.15
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=7.90%, Cost=$0.9210, Strategy=Yes POLY ($0.00) + No KALSHI ($0.92) -> Profit $0.08
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.20%, Cost=$0.9580, Strategy=Yes POLY ($0.04) + No KALSHI ($0.92) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Strategy=Yes POLY ($0.59) + No KALSHI ($0.38) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.60%, Cost=$0.9740, Strategy=Yes POLY ($0.01) + No KALSHI ($0.96) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Strategy=Yes POLY ($0.96) + No KALSHI ($0.01) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=9.10%, Cost=$0.9090, Strategy=Yes POLY ($0.02) + No KALSHI ($0.89) -> Profit $0.09
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=94.80%, Cost=$0.0520, Strategy=Yes POLY ($0.02) + No KALSHI ($0.03) -> Profit $0.95
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.60%, Cost=$0.9740, Strategy=Yes POLY ($0.00) + No KALSHI ($0.97) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Strategy=Yes POLY ($0.14) + No KALSHI ($0.83) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=6.00%, Cost=$0.9400, Strategy=Yes POLY ($0.38) + No KALSHI ($0.56) -> Profit $0.06
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.50%, Cost=$0.9550, Strategy=Yes POLY ($0.01) + No KALSHI ($0.95) -> Profit $0.05
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Strategy=Yes POLY ($0.33) + No KALSHI ($0.65) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Strategy=Yes POLY ($0.12) + No KALSHI ($0.86) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.30%, Cost=$0.9670, Strategy=Yes POLY ($0.02) + No KALSHI ($0.95) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=10.00%, Cost=$0.9000, Strategy=Yes POLY ($0.67) + No KALSHI ($0.23) -> Profit $0.10
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=6.00%, Cost=$0.9400, Strategy=Yes POLY ($0.37) + No KALSHI ($0.57) -> Profit $0.06
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.30%, Cost=$0.9770, Strategy=Yes POLY ($0.01) + No KALSHI ($0.97) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Strategy=Yes POLY ($0.03) + No KALSHI ($0.95) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Strategy=Yes POLY ($0.29) + No KALSHI ($0.67) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Strategy=Yes POLY ($0.10) + No KALSHI ($0.86) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Strategy=Yes POLY ($0.54) + No KALSHI ($0.43) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.20%, Cost=$0.9680, Strategy=Yes POLY ($0.10) + No KALSHI ($0.87) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Strategy=Yes POLY ($0.17) + No KALSHI ($0.80) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Strategy=Yes POLY ($0.58) + No KALSHI ($0.37) -> Profit $0.05
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=11.00%, Cost=$0.8900, Strategy=Yes POLY ($0.31) + No KALSHI ($0.58) -> Profit $0.11
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Strategy=Yes POLY ($0.61) + No KALSHI ($0.37) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=4.90%, Cost=$0.9510, Strategy=Yes POLY ($0.03) + No KALSHI ($0.92) -> Profit $0.05
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.60%, Cost=$0.9640, Strategy=Yes POLY ($0.00) + No KALSHI ($0.96) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=7.00%, Cost=$0.9300, Strategy=Yes POLY ($0.62) + No KALSHI ($0.31) -> Profit $0.07
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.90%, Cost=$0.9610, Strategy=Yes POLY ($0.18) + No KALSHI ($0.78) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Strategy=Yes POLY ($0.13) + No KALSHI ($0.85) -> Profit $0.02
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=2.60%, Cost=$0.9740, Strategy=Yes POLY ($0.12) + No KALSHI ($0.85) -> Profit $0.03
+2025-12-29 14:09:01,019 - matcher - INFO - Arbitrage found! ROI=3.80%, Cost=$0.9620, Strategy=Yes POLY ($0.06) + No KALSHI ($0.90) -> Profit $0.04
+2025-12-29 14:09:01,019 - matcher - INFO - Found 67 arbitrage opportunities
+2025-12-29 14:09:01,019 - __main__ - INFO - Found 67 Poly-Kalshi arbitrage opportunities
+2025-12-29 14:09:01,019 - __main__ - INFO - 
+=== Scanning Polymarket vs Opinion Labs ===
+2025-12-29 14:09:01,019 - matcher - INFO - Matching 19365 Polymarket vs 51 Opinion markets...
+2025-12-29 14:09:01,064 - matcher - INFO - Index built. Starting optimized matching...
+2025-12-29 14:09:01,302 - matcher - INFO - Found 35 matching pairs
+2025-12-29 14:09:01,306 - matcher - INFO - Calculating arbitrage for 35 matched pairs...
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=50.00%, Cost=$0.5000, Strategy=Yes POLY ($0.47) + No OPINION ($0.03) -> Profit $0.50
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Strategy=No POLY ($0.75) + Yes OPINION ($0.23) -> Profit $0.02
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=3.10%, Cost=$0.9690, Strategy=Yes POLY ($0.13) + No OPINION ($0.84) -> Profit $0.03
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Strategy=No POLY ($0.89) + Yes OPINION ($0.08) -> Profit $0.03
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=2.30%, Cost=$0.9770, Strategy=Yes POLY ($0.32) + No OPINION ($0.66) -> Profit $0.02
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=2.20%, Cost=$0.9780, Strategy=Yes POLY ($0.72) + No OPINION ($0.26) -> Profit $0.02
+2025-12-29 14:09:01,306 - matcher - INFO - Arbitrage found! ROI=2.40%, Cost=$0.9760, Strategy=No POLY ($0.98) + Yes OPINION ($0.00) -> Profit $0.02
+2025-12-29 14:09:01,306 - matcher - INFO - Found 7 arbitrage opportunities
+2025-12-29 14:09:01,306 - __main__ - INFO - Found 7 Poly-Opinion arbitrage opportunities
+2025-12-29 14:09:01,306 - __main__ - INFO - 
+=== Scanning Kalshi vs Opinion Labs ===
+2025-12-29 14:09:01,306 - matcher - INFO - Matching 227504 Polymarket vs 51 Opinion markets...
+2025-12-29 14:09:02,053 - matcher - INFO - Index built. Starting optimized matching...
+2025-12-29 14:09:02,284 - matcher - INFO - Found 0 matching pairs
+2025-12-29 14:09:02,297 - __main__ - INFO - Results saved to arbitrage_results.json
+2025-12-29 14:09:02,297 - __main__ - INFO - Arbitrage scan completed successfully
+2026-01-02 14:07:50,439 - __main__ - INFO - Opinion Labs API key found - scanning all 3 platforms
+2026-01-02 14:07:50,439 - __main__ - INFO - Starting data collection from available platforms...
+2026-01-02 14:07:50,440 - services.polymarket - INFO - Fetching active Polymarket markets (future markets only)...
+2026-01-02 14:07:50,495 - services.kalshi - INFO - Kalshi RSA authentication configured
+2026-01-02 14:07:50,495 - services.kalshi - INFO - Fetching Kalshi markets...
+2026-01-02 14:07:50,495 - services.opinion - INFO - Opinion Labs API key configured
+2026-01-02 14:07:50,495 - services.opinion - INFO - Fetching Opinion Labs markets via active curl...
+2026-01-02 14:08:55,194 - services.opinion - INFO - Fetching prices for 61 markets (via curl)...
+2026-01-02 14:08:55,194 - services.opinion - INFO - Starting threaded price fetch (workers=2)...
+2026-01-02 14:10:13,617 - services.polymarket - INFO - Fetched 18889 active Polymarket markets
+2026-01-02 14:10:16,191 - services.opinion - INFO - Price fetch completed.
+2026-01-02 14:10:16,191 - services.opinion - INFO - Fetched 61 Opinion Labs markets total
+2026-01-02 14:15:11,237 - services.kalshi - INFO - Fetched 206463 Kalshi markets
+2026-01-02 14:17:23,048 - __main__ - INFO - Opinion Labs API key found - scanning all 3 platforms
+2026-01-02 14:17:23,048 - __main__ - INFO - Starting data collection from available platforms...
+2026-01-02 14:17:23,049 - services.polymarket - INFO - Fetching active Polymarket markets (future markets only)...
+2026-01-02 14:17:23,099 - services.kalshi - INFO - Kalshi RSA authentication configured
+2026-01-02 14:17:23,100 - services.kalshi - INFO - Fetching Kalshi markets...
+2026-01-02 14:17:23,100 - services.opinion - INFO - Opinion Labs API key configured
+2026-01-02 14:17:23,100 - services.opinion - INFO - Fetching Opinion Labs markets via active curl...
+2026-01-02 14:17:44,686 - services.opinion - INFO - Fetching prices for 61 markets (via curl)...
+2026-01-02 14:17:44,687 - services.opinion - INFO - Starting threaded price fetch (workers=2)...
+2026-01-02 14:18:05,523 - services.opinion - INFO - Price fetch completed.
+2026-01-02 14:18:05,524 - services.opinion - INFO - Fetched 61 Opinion Labs markets total
+2026-01-02 14:18:10,412 - services.polymarket - INFO - Fetched 18930 active Polymarket markets
+2026-01-02 14:21:53,047 - services.kalshi - INFO - Fetched 11436 Kalshi markets
+2026-01-02 14:21:53,051 - services.llm_verifier - WARNING - OPENAI_API_KEY not found. LLM Verification disabled.
+2026-01-02 14:21:53,051 - __main__ - INFO - 
+=== Scanning Polymarket vs Kalshi ===
+2026-01-02 14:21:53,098 - matcher - INFO - Matching 18930 Polymarket vs 11436 KALSHI markets...
+2026-01-02 14:21:53,098 - matcher - INFO - Index built. Starting optimized matching...
+2026-01-02 14:22:29,543 - matcher - INFO - Found 229 matching pairs
+2026-01-02 14:22:29,544 - matcher - INFO - Calculating arbitrage for 229 matched pairs...
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=2.30%, Cost=$0.9770, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=10.00%, Cost=$0.9000, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,544 - matcher - INFO - Arbitrage found! ROI=11.60%, Cost=$0.8840, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=20.00%, Cost=$0.8000, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=6.20%, Cost=$0.9380, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=79.60%, Cost=$0.2040, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=6.00%, Cost=$0.9400, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=4.90%, Cost=$0.9510, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=5.60%, Cost=$0.9440, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.50%, Cost=$0.9650, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=11.20%, Cost=$0.8880, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=7.00%, Cost=$0.9300, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=10.00%, Cost=$0.9000, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=42.90%, Cost=$0.5710, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=24.20%, Cost=$0.7580, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=16.40%, Cost=$0.8360, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=10.00%, Cost=$0.9000, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=4.00%, Cost=$0.9600, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=2.40%, Cost=$0.9760, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=21.20%, Cost=$0.7880, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=18.40%, Cost=$0.8160, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=63.00%, Cost=$0.3700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=27.30%, Cost=$0.7270, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=7.00%, Cost=$0.9300, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=41.10%, Cost=$0.5890, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=31.20%, Cost=$0.6880, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=14.10%, Cost=$0.8590, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=69.70%, Cost=$0.3030, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=24.20%, Cost=$0.7580, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=77.00%, Cost=$0.2300, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=41.10%, Cost=$0.5890, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=81.90%, Cost=$0.1810, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=73.90%, Cost=$0.2610, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=71.10%, Cost=$0.2890, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=31.00%, Cost=$0.6900, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=55.00%, Cost=$0.4500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,545 - matcher - INFO - Arbitrage found! ROI=66.40%, Cost=$0.3360, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=30.70%, Cost=$0.6930, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=5.20%, Cost=$0.9480, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=30.00%, Cost=$0.7000, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=18.20%, Cost=$0.8180, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=22.30%, Cost=$0.7770, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=23.00%, Cost=$0.7700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=58.80%, Cost=$0.4120, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=39.70%, Cost=$0.6030, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=41.30%, Cost=$0.5870, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=33.80%, Cost=$0.6620, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=30.50%, Cost=$0.6950, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=34.00%, Cost=$0.6600, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=10.40%, Cost=$0.8960, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=3.60%, Cost=$0.9640, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=6.00%, Cost=$0.9400, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.30%, Cost=$0.9770, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=5.40%, Cost=$0.9460, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=6.20%, Cost=$0.9380, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.50%, Cost=$0.9750, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=4.70%, Cost=$0.9530, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=5.00%, Cost=$0.9500, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.70%, Cost=$0.9730, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.90%, Cost=$0.9710, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=3.10%, Cost=$0.9690, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.00%, Cost=$0.9800, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Arbitrage found! ROI=2.40%, Cost=$0.9760, Platform1=POLY, Platform2=KALSHI
+2026-01-02 14:22:29,546 - matcher - INFO - Found 92 arbitrage opportunities
+2026-01-02 14:22:29,546 - __main__ - INFO - Found 92 Poly-Kalshi arbitrage opportunities
+2026-01-02 14:22:29,546 - __main__ - INFO - 
+=== Scanning Polymarket vs Opinion Labs ===
+2026-01-02 14:22:29,594 - matcher - INFO - Matching 18930 Polymarket vs 61 OPINION markets...
+2026-01-02 14:22:29,594 - matcher - INFO - Index built. Starting optimized matching...
+2026-01-02 14:22:29,796 - matcher - INFO - Found 18 matching pairs
+2026-01-02 14:22:29,797 - matcher - INFO - Calculating arbitrage for 18 matched pairs...
+2026-01-02 14:22:29,797 - matcher - INFO - Arbitrage found! ROI=24.90%, Cost=$0.7510, Platform1=POLY, Platform2=OPINION
+2026-01-02 14:22:29,797 - matcher - INFO - Arbitrage found! ROI=3.00%, Cost=$0.9700, Platform1=POLY, Platform2=OPINION
+2026-01-02 14:22:29,797 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Platform1=POLY, Platform2=OPINION
+2026-01-02 14:22:29,797 - matcher - INFO - Arbitrage found! ROI=18.00%, Cost=$0.8200, Platform1=POLY, Platform2=OPINION
+2026-01-02 14:22:29,797 - matcher - INFO - Arbitrage found! ROI=2.10%, Cost=$0.9790, Platform1=POLY, Platform2=OPINION
+2026-01-02 14:22:29,797 - matcher - INFO - Found 5 arbitrage opportunities
+2026-01-02 14:22:29,797 - __main__ - INFO - Found 5 Poly-Opinion arbitrage opportunities
+2026-01-02 14:22:29,797 - __main__ - INFO - 
+=== Scanning Kalshi vs Opinion Labs ===
+2026-01-02 14:22:29,837 - matcher - INFO - Matching 11436 Polymarket vs 61 OPINION markets...
+2026-01-02 14:22:29,837 - matcher - INFO - Index built. Starting optimized matching...
+2026-01-02 14:22:29,968 - matcher - INFO - Found 0 matching pairs
+2026-01-02 14:22:29,975 - __main__ - INFO - Results saved to arbitrage_results.json
+2026-01-02 14:22:29,975 - __main__ - INFO - Arbitrage scan completed successfully

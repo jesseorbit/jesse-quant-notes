@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from services.opinion import OpinionCollector
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 load_dotenv()
 
 def test_collector():
