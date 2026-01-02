@@ -141,7 +141,8 @@ def save_results(opportunities: List[ArbitrageOpportunity], filename: str = "arb
             "profit_margin": opp.profit_margin,
             "total_cost": opp.total_cost,
             "similarity_score": opp.similarity_score,
-            "polymarket": {
+            "market1": {
+                "platform": opp.poly_market.platform,
                 "market_id": opp.poly_market.market_id,
                 "title": opp.poly_market.title,
                 "price_yes": opp.poly_market.price_yes,
@@ -149,7 +150,8 @@ def save_results(opportunities: List[ArbitrageOpportunity], filename: str = "arb
                 "volume": opp.poly_market.volume,
                 "url": opp.poly_market.url,
             },
-            "opinion": {
+            "market2": {
+                "platform": opp.opinion_market.platform,
                 "market_id": opp.opinion_market.market_id,
                 "title": opp.opinion_market.title,
                 "price_yes": opp.opinion_market.price_yes,
@@ -183,11 +185,11 @@ def print_summary(opportunities: List[ArbitrageOpportunity]):
         print(f"Profit Margin: ${opp.profit_margin:.4f}")
         print(f"Total Cost: ${opp.total_cost:.4f}")
         print(f"Match Score: {opp.similarity_score:.1f}/100")
-        print(f"\nPolymarket:")
+        print(f"\n{opp.poly_market.platform}:")
         print(f"  Title: {opp.poly_market.title[:60]}...")
         print(f"  YES: ${opp.poly_market.price_yes:.4f} | NO: ${opp.poly_market.price_no:.4f}")
         print(f"  URL: {opp.poly_market.url}")
-        print(f"\nOpinion Labs:")
+        print(f"\n{opp.opinion_market.platform}:")
         print(f"  Title: {opp.opinion_market.title[:60]}...")
         print(f"  YES: ${opp.opinion_market.price_yes:.4f} | NO: ${opp.opinion_market.price_no:.4f}")
         print(f"  URL: {opp.opinion_market.url}")

@@ -228,17 +228,20 @@ class MarketMatcher:
         """
         matches = []
         
-        logger.info(f"Matching {len(poly_markets)} Polymarket vs {len(opinion_markets)} Opinion markets...")
-        
-        # Build index on the larger dataset (usually Kalshi/Opinion)
         if len(opinion_markets) > len(poly_markets):
             index = self._build_index(opinion_markets)
             source_markets = poly_markets
-            target_is_opinion = True
+            target_is_second = True
+            platform2 = opinion_markets[0].platform if opinion_markets else "Second"
+            platform1 = "POLY"
         else:
             index = self._build_index(poly_markets)
             source_markets = opinion_markets
-            target_is_opinion = False
+            target_is_second = False
+            platform2 = "POLY"
+            platform1 = opinion_markets[0].platform if opinion_markets else "First"
+            
+        logger.info(f"Matching {len(poly_markets)} Polymarket vs {len(opinion_markets)} {platform1 if target_is_second else platform1} markets...")
             
         logger.info("Index built. Starting optimized matching...")
         
@@ -307,16 +310,16 @@ class MarketMatcher:
                         best_match = candidate
             
             if best_match:
-                if target_is_opinion:
+                if target_is_second:
                     poly = source_market
-                    opinion = best_match
+                    other = best_match
                 else:
                     poly = best_match
-                    opinion = source_market
+                    other = source_market
                     
                 # Double check to avoid duplicates if multiple source markets match same target
                 # (Simple linear append for now, can be improved)
-                matches.append((poly, opinion, best_score))
+                matches.append((poly, other, best_score))
                 # logger.debug(f"Match: {poly.title[:30]}... <-> {opinion.title[:30]}... ({best_score})")
         
         logger.info(f"Found {len(matches)} matching pairs")
@@ -399,7 +402,7 @@ class MarketMatcher:
                     opportunities.append(opportunity)
                     logger.info(
                         f"Arbitrage found! ROI={roi_percent:.2f}%, "
-                        f"Cost=${total_cost:.4f}, Strategy={strategy_desc}"
+                        f"Cost=${total_cost:.4f}, Platform1={poly_market.platform}, Platform2={opinion_market.platform}"
                     )
         
         # Sort by ROI descending

@@ -130,16 +130,16 @@ async def scan_markets():
             opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
             all_opportunities.extend(opportunities)
     
-    # Polymarket vs Opinion
-    if poly_markets and opinion_markets:
-        matches = matcher.find_matches(poly_markets, opinion_markets)
+    # Kalshi vs Opinion
+    if kalshi_markets and opinion_markets:
+        matches = matcher.find_matches(kalshi_markets, opinion_markets)
         if matches:
             opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
             all_opportunities.extend(opportunities)
     
-    # Kalshi vs Opinion
-    if kalshi_markets and opinion_markets:
-        matches = matcher.find_matches(kalshi_markets, opinion_markets)
+    # Polymarket vs Opinion
+    if poly_markets and opinion_markets:
+        matches = matcher.find_matches(poly_markets, opinion_markets)
         if matches:
             opportunities = matcher.calculate_arbitrage(matches, min_margin=0.02, max_cost=0.98)
             all_opportunities.extend(opportunities)

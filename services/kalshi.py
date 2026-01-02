@@ -175,6 +175,23 @@ class KalshiCollector:
                 
                 for market_data in markets_data:
                     try:
+                        # Optimization: Skip markets with very low volume immediately
+                        # This significantly reduces memory and downstream processing
+                        volume = float(market_data.get("volume", 0) or 0)
+                        if volume < 500: # Slightly lower than matcher threshold for safety
+                            continue
+
+                        # Optimization: Filter out past markets
+                        close_time = market_data.get("close_time")
+                        if close_time:
+                            try:
+                                end_dt = datetime.fromisoformat(close_time.replace("Z", "+00:00"))
+                                now = datetime.now(end_dt.tzinfo)
+                                if end_dt < now:
+                                    continue
+                            except:
+                                pass
+
                         standard_market = self._parse_market(market_data)
                         if standard_market:
                             all_markets.append(standard_market)
@@ -198,6 +215,12 @@ class KalshiCollector:
                     break
                 
                 logger.debug(f"Fetched {len(all_markets)} markets so far, continuing...")
+                
+                # Safety break: Kalshi has 200k+ markets, if we still haven't finished 
+                # after a reasonable amount of active markets, we might be in a loop
+                if len(all_markets) > 50000:
+                    logger.warning("Safety limit reached (50k markets). Stopping fetch.")
+                    break
             
             logger.info(f"Fetched {len(all_markets)} Kalshi markets")
             return all_markets[:limit] if limit else all_markets

@@ -17,7 +17,6 @@ class StandardMarket:
     price_yes: float     # 0.00 ~ 1.00
     price_no: float      # 0.00 ~ 1.00
     volume: float        # USD Volume
-    volume: float        # USD Volume
     url: str             # Market Link
     end_date: Optional[datetime.datetime] = None  # Market expiration date
     

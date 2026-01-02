@@ -99,7 +99,7 @@ class OpinionCollector:
         market_token_map = {} # Map market_id -> (yes_token_id, no_token_id, market_obj)
         
         page = 1
-        page_size = 100
+        page_size = 20
         empty_retries = 0
         
         logger.info(f"Fetching Opinion Labs markets via active curl...")
