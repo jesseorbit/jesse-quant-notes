@@ -1,0 +1,11 @@
+slug,asset,epoch,entered,unwinded,forced,entry_side,shares_yes,shares_no,avg_cost_yes,avg_cost_no,total_cost,locked_payout,pnl,max_gross_exposure,minutes_to_unwind
+btc-updown-15m-1765954800,btc,1765954800,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765955700,btc,1765955700,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765956600,btc,1765956600,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765957500,btc,1765957500,True,True,False,yes,100,100,0.30530499999999994,0.6756749999999999,98.09799999999998,100.0,1.9020000000000152,32.5,
+btc-updown-15m-1765958400,btc,1765958400,True,True,False,yes,300,300,0.11845166666666666,0.875875,298.298,300.0,1.7019999999999982,37.5,
+btc-updown-15m-1765959300,btc,1765959300,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765960200,btc,1765960200,True,True,True,yes,100,100,0.34534499999999996,0.7357349999999999,108.10799999999999,100.0,-8.10799999999999,26.5,
+btc-updown-15m-1765961100,btc,1765961100,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765962000,btc,1765962000,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,
+btc-updown-15m-1765962900,btc,1765962900,False,False,False,,0,0,0.0,0.0,0.0,0.0,0.0,0.0,

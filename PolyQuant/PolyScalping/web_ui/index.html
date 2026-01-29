@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>🚨 PolyScalping v2.2 - CONFIG + EMERGENCY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a1a1a',
+                        card: '#242424',
+                        accent: '#3b82f6',
+                        success: '#10b981',
+                        danger: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            background-color: #242424;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="p-6">
+
+    <div class="max-w-6xl mx-auto space-y-6">
+
+        <!-- Header -->
+        <div class="flex justify-between items-center pb-4 border-b border-gray-700">
+            <div>
+                <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
+                    PolyScalping Bot</h1>
+                <p class="text-gray-400 text-sm mt-1">Real-time Arbitrage & Scalping Monitor</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div id="status-indicator"
+                    class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 border border-gray-700">
+                    <div class="w-3 h-3 rounded-full bg-gray-500" id="status-dot"></div>
+                    <span class="font-medium" id="status-text">Connecting...</span>
+                </div>
+                <button onclick="toggleBot()" id="control-btn"
+                    class="px-6 py-2 rounded-lg font-bold transition-all bg-green-600 hover:bg-green-700 text-white">
+                    START
+                </button>
+                <div class="flex gap-2">
+                    <button onclick="forceSync()"
+                        class="p-2 rounded bg-gray-800 border border-gray-700 hover:bg-gray-700 text-gray-400"
+                        title="Sync Positions">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </button>
+                    <button onclick="forceScan()"
+                        class="p-2 rounded bg-gray-800 border border-gray-700 hover:bg-gray-700 text-gray-400"
+                        title="Force Scan">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VERSION CHECK BANNER -->
+        <div class="bg-purple-900 border-2 border-purple-400 rounded-lg p-4 mb-6 text-center">
+            <span class="text-white font-bold text-lg">✨ v2.2 UPDATED - Config Panel + Emergency Unwind Added! ✨</span>
+        </div>
+
+        <!-- STRATEGY CONFIG PANEL (MOVED TO TOP) -->
+        <div class="card border-2 border-accent shadow-lg shadow-accent/20">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-bold flex items-center gap-2">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">Strategy Configuration</span>
+                </h2>
+                <button onclick="toggleConfigPanel()" id="toggle-config-btn"
+                    class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium transition-colors">
+                    Hide
+                </button>
+            </div>
+
+            <div id="config-panel-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                    <!-- Level 1 -->
+                    <div class="border border-gray-700 rounded-lg p-4 bg-gray-800/50">
+                        <h3 class="text-sm font-bold text-blue-400 mb-3 flex items-center gap-2">
+                            <span class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">1</span>
+                            Level 1
+                        </h3>
+                        <div class="space-y-2">
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Entry Price</label>
+                                <input type="number" step="0.01" id="cfg-level-1-price"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Shares</label>
+                                <input type="number" step="1" id="cfg-level-1-size"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Level 2 -->
+                    <div class="border border-gray-700 rounded-lg p-4 bg-gray-800/50">
+                        <h3 class="text-sm font-bold text-blue-400 mb-3 flex items-center gap-2">
+                            <span class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">2</span>
+                            Level 2
+                        </h3>
+                        <div class="space-y-2">
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Entry Price</label>
+                                <input type="number" step="0.01" id="cfg-level-2-price"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Shares</label>
+                                <input type="number" step="1" id="cfg-level-2-size"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Level 3 -->
+                    <div class="border border-gray-700 rounded-lg p-4 bg-gray-800/50">
+                        <h3 class="text-sm font-bold text-blue-400 mb-3 flex items-center gap-2">
+                            <span class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">3</span>
+                            Level 3
+                        </h3>
+                        <div class="space-y-2">
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Entry Price</label>
+                                <input type="number" step="0.01" id="cfg-level-3-price"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Shares</label>
+                                <input type="number" step="1" id="cfg-level-3-size"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profit Target & Max Trades -->
+                    <div class="border border-gray-700 rounded-lg p-4 bg-gray-800/50">
+                        <h3 class="text-sm font-bold text-green-400 mb-3">Exit Settings</h3>
+                        <div class="space-y-2">
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Profit Target (%)</label>
+                                <input type="number" step="0.5" id="cfg-profit-target"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-green-400 font-bold">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 mb-1">Max Trades/Market</label>
+                                <input type="number" step="1" id="cfg-max-trades"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High Price Scalping -->
+                <div class="border border-purple-600 rounded-lg p-4 bg-purple-900/20 mb-4">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-base font-bold text-purple-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            High Price Scalping (80c+ Final Minutes)
+                        </h3>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="cfg-enable-hps" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-purple-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                        </label>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs text-gray-400 mb-1">Threshold</label>
+                            <input type="number" step="0.01" id="cfg-hps-threshold"
+                                class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-400 mb-1">Shares</label>
+                            <input type="number" step="1" id="cfg-hps-size"
+                                class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-400 mb-1">Profit Target (%)</label>
+                            <input type="number" step="0.5" id="cfg-hps-profit"
+                                class="w-full bg-gray-900 border border-gray-600 rounded p-2 focus:border-accent focus:ring-1 focus:ring-accent outline-none font-mono text-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update Button -->
+                <div class="flex items-center gap-4">
+                    <button onclick="updateConfig()"
+                        class="flex-1 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white font-bold py-3 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg">
+                        💾 Update Strategy
+                    </button>
+                    <p id="cfg-msg" class="text-sm font-medium h-6"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="card">
+                <h3 class="text-gray-400 text-sm font-semibold mb-2">WALLET BALANCE</h3>
+                <div class="text-4xl font-mono font-bold text-accent" id="wallet-balance">$0.00</div>
+            </div>
+            <div class="card">
+                <h3 class="text-gray-400 text-sm font-semibold mb-2">DAILY PNL</h3>
+                <div class="text-4xl font-mono font-bold" id="daily-pnl">$0.00</div>
+            </div>
+            <div class="card">
+                <h3 class="text-gray-400 text-sm font-semibold mb-2">ACTIVE MARKETS</h3>
+                <div class="text-4xl font-mono font-bold" id="active-markets">0</div>
+            </div>
+            <div class="card">
+                <h3 class="text-gray-400 text-sm font-semibold mb-2">OPEN POSITIONS</h3>
+                <div class="text-4xl font-mono font-bold" id="open-positions">0</div>
+            </div>
+        </div>
+
+        <!-- Positions Table -->
+        <div class="card">
+                <h2 class="text-xl font-bold mb-4">Active Positions</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="text-gray-500 text-sm border-b border-gray-700">
+                                <th class="pb-2">Market</th>
+                                <th class="pb-2 text-right">Side</th>
+                                <th class="pb-2 text-right">Size</th>
+                                <th class="pb-2 text-right">Avg Price</th>
+                                <th class="pb-2 text-right">Value</th>
+                                <th class="pb-2 text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="positions-body" class="text-sm font-mono">
+                            <!-- Populated via JS -->
+                            <tr>
+                                <td colspan="6" class="text-center py-8 text-gray-600">No active positions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isRunning = false;
+
+        async function fetchStatus() {
+            try {
+                const res = await fetch('/api/status');
+                const data = await res.json();
+
+                document.getElementById('wallet-balance').innerText = '$' + data.wallet_balance.toFixed(2);
+                document.getElementById('daily-pnl').innerText = '$' + data.daily_pnl.toFixed(2);
+                document.getElementById('daily-pnl').className = `text-4xl font-mono font-bold ${data.daily_pnl >= 0 ? 'text-green-500' : 'text-red-500'}`;
+
+                document.getElementById('active-markets').innerText = data.active_markets_count;
+                document.getElementById('open-positions').innerText = data.positions.length;
+
+                updateStatusUI(data.running);
+                renderPositions(data.positions);
+
+            } catch (e) {
+                console.error("Status fetch failed", e);
+            }
+        }
+
+        async function loadConfig() {
+            try {
+                const res = await fetch('/api/config');
+                const cfg = await res.json();
+
+                // Only update if not focused (to allow typing)
+                if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'CHECKBOX') {
+                    document.getElementById('cfg-level-1-price').value = cfg.entry_levels[0].price;
+                    document.getElementById('cfg-level-1-size').value = cfg.entry_levels[0].size;
+                    document.getElementById('cfg-level-2-price').value = cfg.entry_levels[1].price;
+                    document.getElementById('cfg-level-2-size').value = cfg.entry_levels[1].size;
+                    document.getElementById('cfg-level-3-price').value = cfg.entry_levels[2].price;
+                    document.getElementById('cfg-level-3-size').value = cfg.entry_levels[2].size;
+                    document.getElementById('cfg-profit-target').value = cfg.profit_target_pct;
+                    document.getElementById('cfg-enable-hps').checked = cfg.enable_high_price_scalping;
+                    document.getElementById('cfg-hps-threshold').value = cfg.high_price_threshold;
+                    document.getElementById('cfg-hps-size').value = cfg.high_price_scalp_size;
+                    document.getElementById('cfg-hps-profit').value = cfg.high_price_profit_pct;
+                    document.getElementById('cfg-max-trades').value = cfg.max_trades_per_market;
+                }
+            } catch (e) {
+                console.error("Config fetch failed", e);
+            }
+        }
+
+        function updateStatusUI(running) {
+            isRunning = running;
+            const dot = document.getElementById('status-dot');
+            const text = document.getElementById('status-text');
+            const btn = document.getElementById('control-btn');
+
+            if (running) {
+                dot.className = "w-3 h-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]";
+                text.innerText = "RUNNING";
+                text.className = "font-medium text-green-500";
+                btn.innerText = "STOP BOT";
+                btn.className = "px-6 py-2 rounded-lg font-bold transition-all bg-red-600 hover:bg-red-700 text-white";
+            } else {
+                dot.className = "w-3 h-3 rounded-full bg-red-500";
+                text.innerText = "STOPPED";
+                text.className = "font-medium text-red-500";
+                btn.innerText = "START BOT";
+                btn.className = "px-6 py-2 rounded-lg font-bold transition-all bg-green-600 hover:bg-green-700 text-white";
+            }
+        }
+
+        async function toggleBot() {
+            const action = isRunning ? 'stop' : 'start';
+            await fetch('/api/control', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: action })
+            });
+            fetchStatus();
+        }
+
+        async function forceSync() {
+            const res = await fetch('/api/sync', { method: 'POST' });
+            if (res.ok) fetchStatus();
+        }
+
+        async function forceScan() {
+            const res = await fetch('/api/scan', { method: 'POST' });
+            if (res.ok) fetchStatus();
+        }
+
+        function toggleConfigPanel() {
+            const content = document.getElementById('config-panel-content');
+            const btn = document.getElementById('toggle-config-btn');
+
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.innerText = 'Hide';
+            } else {
+                content.style.display = 'none';
+                btn.innerText = 'Show';
+            }
+        }
+
+        async function updateConfig() {
+            const cfg = {
+                level_1_price: parseFloat(document.getElementById('cfg-level-1-price').value),
+                level_1_size: parseFloat(document.getElementById('cfg-level-1-size').value),
+                level_2_price: parseFloat(document.getElementById('cfg-level-2-price').value),
+                level_2_size: parseFloat(document.getElementById('cfg-level-2-size').value),
+                level_3_price: parseFloat(document.getElementById('cfg-level-3-price').value),
+                level_3_size: parseFloat(document.getElementById('cfg-level-3-size').value),
+                profit_target_pct: parseFloat(document.getElementById('cfg-profit-target').value),
+                enable_high_price_scalping: document.getElementById('cfg-enable-hps').checked,
+                high_price_threshold: parseFloat(document.getElementById('cfg-hps-threshold').value),
+                high_price_scalp_size: parseFloat(document.getElementById('cfg-hps-size').value),
+                high_price_profit_pct: parseFloat(document.getElementById('cfg-hps-profit').value),
+                max_trades_per_market: parseInt(document.getElementById('cfg-max-trades').value)
+            };
+
+            const res = await fetch('/api/config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(cfg)
+            });
+
+            const msg = document.getElementById('cfg-msg');
+            if (res.ok) {
+                msg.innerText = "✅ Strategy Updated!";
+                msg.className = "text-sm font-medium h-6 text-green-400";
+                setTimeout(() => msg.innerText = "", 3000);
+                await loadConfig(); // Reload to confirm
+            } else {
+                msg.innerText = "❌ Update Failed";
+                msg.className = "text-sm font-medium h-6 text-red-400";
+            }
+        }
+
+        async function emergencyUnwind(marketId) {
+            if (!confirm('⚠️ Emergency unwind will:\n1. Close ALL positions for this market\n2. Disable auto-trading for this market\n\nAre you sure?')) {
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/emergency_unwind/${marketId}`, {
+                    method: 'POST'
+                });
+                const result = await res.json();
+
+                if (res.ok) {
+                    alert(`✓ Emergency unwind complete!\n\nClosed ${result.positions_closed} positions\n${result.message}`);
+                    fetchStatus(); // Refresh
+                } else {
+                    alert(`❌ Failed: ${result.error}`);
+                }
+            } catch (e) {
+                alert(`❌ Error: ${e.message}`);
+            }
+        }
+
+        function renderPositions(positions) {
+            const tbody = document.getElementById('positions-body');
+            if (positions.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" class="text-center py-8 text-gray-600">No active positions</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = positions.map(p => {
+                // Determine side derived from shares
+                let side = "-";
+                let size = 0;
+                let price = 0;
+                if (p.shares_yes > 0) { side = "YES"; size = p.shares_yes; price = p.avg_yes; }
+                if (p.shares_no > 0) { side = "NO"; size = p.shares_no; price = p.avg_no; }
+                // Both? rare in scalping unless hedged. Show YES row and NO row ideally or primary. context specific.
+
+                return `
+                    <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition-colors">
+                        <td class="py-3 font-sans truncate max-w-[200px]" title="${p.market}">${p.market}</td>
+                        <td class="py-3 text-right ${side === 'YES' ? 'text-green-400' : 'text-red-400'}">${side}</td>
+                        <td class="py-3 text-right">${size.toFixed(1)}</td>
+                        <td class="py-3 text-right">${price.toFixed(3)}</td>
+                        <td class="py-3 text-right text-gray-400">$${(size * price).toFixed(2)}</td>
+                        <td class="py-3 text-right">
+                            <button onclick="emergencyUnwind('${p.market_id}')"
+                                class="px-3 py-1 bg-red-600 hover:bg-red-700 text-white text-xs rounded font-bold transition-colors">
+                                🚨 UNWIND
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Poll every 1s
+        setInterval(fetchStatus, 1000);
+        fetchStatus(); // Init
+        loadConfig(); // Load initial config
+        setInterval(loadConfig, 5000); // Refresh config every 5s
+    </script>
+</body>
+
+</html>

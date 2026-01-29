@@ -1,0 +1,77 @@
+{
+  "generated_at": "2025-12-17T05:24:25.464519Z",
+  "query_params": {
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "XRP"
+    ],
+    "market_minutes": 15
+  },
+  "markets": {
+    "BTC_UP": {
+      "market_id": "76",
+      "slug": "will-btc-break-20k-before-2021",
+      "question": "Will $BTC break $20k before 2021?",
+      "description": "This is a market on if the USD price of Bitcoin $BTC will be above $20,000 at any point before January 1st, 2021, 12:00am EST, according to Coinmarketcap.com/currencies/bitcoin. This market starts on November 6th, 2020. This market will resolve to \"Yes\" whenever BTC breaks $20,000 according to Coinmarketcap, and if that condition is not met by January 1st, 2021, it will resolve to \"No\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+      "yes_token_id": "24680891386899004239422217017747530833228850388439331073974543214962789676595",
+      "no_token_id": "83973309932681465959484168662520374150245867260821232128773724666573303624136",
+      "discovered_at": "2025-12-17T05:24:25.412036Z"
+    },
+    "BTC_DOWN": {
+      "market_id": "36",
+      "slug": "what-will-the-price-of-bitcoin-be-on-november-4th-2020",
+      "question": "What will the price of Bitcoin be on November 4th, 2020?",
+      "description": "This is a scalar market on what the USD price of Bitcoin will be on November 4th, 2020, according to Coingecko. The lower bound for this market is $5,000/BTC, and the upper bound is $15,000/BTC - you can use the calculator to the right (underneath the Buy modal) to calculate how each Long or Short share price corresponds with the BTC price. The market will be settled according to Coingecko\u2019s BTC page at roughly 12pm EST on November 4th, 2020. Long and Short shares will settle proportional to the final value, in the case of the final value being between these bounds, but if the final value exceeds either the upper or lower bound, the price of each Outcome Share is capped at $1. Refer to calculator for share price and BTC price correlation. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
+      "yes_token_id": "53678111440828523722141246186412284959552524573416536208576098319557003483879",
+      "no_token_id": "27264257149048736764964503982112624364843013894764060447611166847296827564421",
+      "discovered_at": "2025-12-17T05:24:25.412116Z"
+    },
+    "ETH_UP": {
+      "market_id": "215348",
+      "slug": "what-will-the-price-of-eth-be-on-june-22",
+      "question": "What will the price of $ETH be on June 22?",
+      "description": "This is a scalar market on what the price of $ETH (Ethereum) will be on June 22, 12:00 PM ET. The lower bound for this market is $2,000.00, and the upper bound is $3,000.00. The resolution source for this market will be prices listed on CoinGecko (https://www.coingecko.com/en/coins/ethereum). This market will resolve on the \u201cC\u201d (i.e. closing price) listed for the candle titled \u201cTue 22 June 2021, 12:00:00\u201d, with the \u201cPrice\u201d tab selected, in the Eastern Time Zone. Note, this 12:00:00 candle lists the opening price for 11:30:00 AM ET and the closing price for 12:00:00 PM ET. To allow for updates, this market will resolve on the number listed for the referenced candle at exactly 12:25:00 PM ET, on June 22, 2021. (To see the candlestick close price, click the candlestick icon, and observe the number after the \u201cC:\u201d when you hover over a candlestick for a given time period.) If Coingecko is unavailable at the resolution time, another credible source will be chosen in good faith by the MIC to resolve the market.\n\nYou can use the calculator to the right (underneath the Buy modal) to calculate how each Long or Short Token price corresponds with $ETH's price. Long and Short shares will settle proportionally to the outcome value if the final value is between these bounds, but if the final value exceeds either the upper or lower bound, the price of each Outcome Token is capped at $1 and $0. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+      "yes_token_id": "72370543484778440025605824548880113692450286302690038592065292141189624604489",
+      "no_token_id": "2818725845312472672911619901225194330752158728792101199898929360929589334094",
+      "discovered_at": "2025-12-17T05:24:25.432271Z"
+    },
+    "ETH_DOWN": {
+      "market_id": "215348",
+      "slug": "what-will-the-price-of-eth-be-on-june-22",
+      "question": "What will the price of $ETH be on June 22?",
+      "description": "This is a scalar market on what the price of $ETH (Ethereum) will be on June 22, 12:00 PM ET. The lower bound for this market is $2,000.00, and the upper bound is $3,000.00. The resolution source for this market will be prices listed on CoinGecko (https://www.coingecko.com/en/coins/ethereum). This market will resolve on the \u201cC\u201d (i.e. closing price) listed for the candle titled \u201cTue 22 June 2021, 12:00:00\u201d, with the \u201cPrice\u201d tab selected, in the Eastern Time Zone. Note, this 12:00:00 candle lists the opening price for 11:30:00 AM ET and the closing price for 12:00:00 PM ET. To allow for updates, this market will resolve on the number listed for the referenced candle at exactly 12:25:00 PM ET, on June 22, 2021. (To see the candlestick close price, click the candlestick icon, and observe the number after the \u201cC:\u201d when you hover over a candlestick for a given time period.) If Coingecko is unavailable at the resolution time, another credible source will be chosen in good faith by the MIC to resolve the market.\n\nYou can use the calculator to the right (underneath the Buy modal) to calculate how each Long or Short Token price corresponds with $ETH's price. Long and Short shares will settle proportionally to the outcome value if the final value is between these bounds, but if the final value exceeds either the upper or lower bound, the price of each Outcome Token is capped at $1 and $0. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+      "yes_token_id": "72370543484778440025605824548880113692450286302690038592065292141189624604489",
+      "no_token_id": "2818725845312472672911619901225194330752158728792101199898929360929589334094",
+      "discovered_at": "2025-12-17T05:24:25.432337Z"
+    },
+    "SOL_UP": {
+      "market_id": "215348",
+      "slug": "what-will-the-price-of-eth-be-on-june-22",
+      "question": "What will the price of $ETH be on June 22?",
+      "description": "This is a scalar market on what the price of $ETH (Ethereum) will be on June 22, 12:00 PM ET. The lower bound for this market is $2,000.00, and the upper bound is $3,000.00. The resolution source for this market will be prices listed on CoinGecko (https://www.coingecko.com/en/coins/ethereum). This market will resolve on the \u201cC\u201d (i.e. closing price) listed for the candle titled \u201cTue 22 June 2021, 12:00:00\u201d, with the \u201cPrice\u201d tab selected, in the Eastern Time Zone. Note, this 12:00:00 candle lists the opening price for 11:30:00 AM ET and the closing price for 12:00:00 PM ET. To allow for updates, this market will resolve on the number listed for the referenced candle at exactly 12:25:00 PM ET, on June 22, 2021. (To see the candlestick close price, click the candlestick icon, and observe the number after the \u201cC:\u201d when you hover over a candlestick for a given time period.) If Coingecko is unavailable at the resolution time, another credible source will be chosen in good faith by the MIC to resolve the market.\n\nYou can use the calculator to the right (underneath the Buy modal) to calculate how each Long or Short Token price corresponds with $ETH's price. Long and Short shares will settle proportionally to the outcome value if the final value is between these bounds, but if the final value exceeds either the upper or lower bound, the price of each Outcome Token is capped at $1 and $0. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+      "yes_token_id": "72370543484778440025605824548880113692450286302690038592065292141189624604489",
+      "no_token_id": "2818725845312472672911619901225194330752158728792101199898929360929589334094",
+      "discovered_at": "2025-12-17T05:24:25.455097Z"
+    },
+    "SOL_DOWN": {
+      "market_id": "215348",
+      "slug": "what-will-the-price-of-eth-be-on-june-22",
+      "question": "What will the price of $ETH be on June 22?",
+      "description": "This is a scalar market on what the price of $ETH (Ethereum) will be on June 22, 12:00 PM ET. The lower bound for this market is $2,000.00, and the upper bound is $3,000.00. The resolution source for this market will be prices listed on CoinGecko (https://www.coingecko.com/en/coins/ethereum). This market will resolve on the \u201cC\u201d (i.e. closing price) listed for the candle titled \u201cTue 22 June 2021, 12:00:00\u201d, with the \u201cPrice\u201d tab selected, in the Eastern Time Zone. Note, this 12:00:00 candle lists the opening price for 11:30:00 AM ET and the closing price for 12:00:00 PM ET. To allow for updates, this market will resolve on the number listed for the referenced candle at exactly 12:25:00 PM ET, on June 22, 2021. (To see the candlestick close price, click the candlestick icon, and observe the number after the \u201cC:\u201d when you hover over a candlestick for a given time period.) If Coingecko is unavailable at the resolution time, another credible source will be chosen in good faith by the MIC to resolve the market.\n\nYou can use the calculator to the right (underneath the Buy modal) to calculate how each Long or Short Token price corresponds with $ETH's price. Long and Short shares will settle proportionally to the outcome value if the final value is between these bounds, but if the final value exceeds either the upper or lower bound, the price of each Outcome Token is capped at $1 and $0. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+      "yes_token_id": "72370543484778440025605824548880113692450286302690038592065292141189624604489",
+      "no_token_id": "2818725845312472672911619901225194330752158728792101199898929360929589334094",
+      "discovered_at": "2025-12-17T05:24:25.455181Z"
+    },
+    "XRP_UP": {
+      "market_id": "239215",
+      "slug": "which-cryptocurrency-will-have-higher-market-cap-on-november-12th-xrp-or-polkadot",
+      "question": "Which cryptocurrency will have higher market cap on November 12th: XRP or Polkadot?",
+      "description": "This is a market on the Market Cap comparison of two cryptocurrencies: XRP ($XRP) and Polkadot ($DOT) for the resolution date and time of November 12, 2021, at 8:00 PM ET. \n\nThe resolution source for this market will be market cap ranking on CoinGecko (https://www.coingecko.com/en). \n\nIf, according to the resolution source, $XRP has a greater market cap than $DOT on the resolution date,  this market will resolve to \u201cXRP\u201d. If $DOT has a greater market cap than $XRP on the resolution date, this market will resolve to \u201cPolkadot\u201d. If the estimated market cap for the resolution date is exactly the same for both cryptocurrencies, this market will resolve 50/50.\n\nIf for any reason the resolution data is unavailable at the resolution time, another credible source will be checked such as CoinMarketCap. In the event of an ambiguity in terms of the market outcome, historical market caps of each coin will be used (https://www.coingecko.com/en/coins/xrp, https://www.coingecko.com/en/coins/polkadot), precisely the first recorded measurement after 8:00 PM.\n--------------\nMarket Cap = Current Price x Circulating Supply\n\nRefers to the total market value of a cryptocurrency\u2019s circulating supply.",
+      "yes_token_id": "5747351179919438449139064742329492889918269482973599257663664486171786731696",
+      "no_token_id": "114932252786887542517376755083517338853169505880113028665151516725157957845554",
+      "discovered_at": "2025-12-17T05:24:25.461745Z"
+    }
+  }
+}

@@ -1,0 +1,1704 @@
+[
+  {
+    "timestamp": "2025-12-29T14:01:05.832750",
+    "roi_percent": 94.8,
+    "profit_margin": 0.948,
+    "total_cost": 0.052000000000000025,
+    "similarity_score": 88.88888888888889,
+    "polymarket": {
+      "market_id": "566538",
+      "title": "will dortmund win the 2025 26 bundesliga",
+      "price_yes": 0.022,
+      "price_no": 0.981,
+      "volume": 33507.586836,
+      "url": "https://polymarket.com/event/bundesliga-winner-527"
+    },
+    "opinion": {
+      "market_id": "KXBUNDESLIGA-26-BVB",
+      "title": "will dortmund win the bundesliga",
+      "price_yes": 0.97,
+      "price_no": 0.030000000000000027,
+      "volume": 50239.0,
+      "url": "https://kalshi.com/markets/KXBUNDESLIGA-26/will-dortmund-win-the-bundesliga/KXBUNDESLIGA-26-BVB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832771",
+    "roi_percent": 67.3,
+    "profit_margin": 0.6729999999999999,
+    "total_cost": 0.32700000000000007,
+    "similarity_score": 85.71428571428572,
+    "polymarket": {
+      "market_id": "561989",
+      "title": "will ted cruz win the 2028 republican presidential nomination",
+      "price_yes": 0.027,
+      "price_no": 0.974,
+      "volume": 3425753.832536,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-TCRU",
+      "title": "who will run for the republican presidential nomination in 2028 ted cruz",
+      "price_yes": 0.7,
+      "price_no": 0.30000000000000004,
+      "volume": 6869.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-ted-cruz/KX2028RRUN-28-TCRU"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832774",
+    "roi_percent": 59.80000000000001,
+    "profit_margin": 0.5980000000000001,
+    "total_cost": 0.40199999999999997,
+    "similarity_score": 86.52482269503547,
+    "polymarket": {
+      "market_id": "561979",
+      "title": "will ron desantis win the 2028 republican presidential nomination",
+      "price_yes": 0.042,
+      "price_no": 0.959,
+      "volume": 1101965.036413,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-RDES",
+      "title": "who will run for the republican presidential nomination in 2028 ron desantis",
+      "price_yes": 0.64,
+      "price_no": 0.36,
+      "volume": 5598.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-ron-desantis/KX2028RRUN-28-RDES"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832776",
+    "roi_percent": 49.9,
+    "profit_margin": 0.499,
+    "total_cost": 0.501,
+    "similarity_score": 90.0,
+    "polymarket": {
+      "market_id": "1034446",
+      "title": "bitcoin up or down december 29 12am et",
+      "price_yes": 0.47,
+      "price_no": 0.5700000000000001,
+      "volume": 3225.104955,
+      "url": "https://polymarket.com/event/bitcoin-up-or-down-december-29-12am-et"
+    },
+    "opinion": {
+      "market_id": "3314",
+      "title": "bitcoin up or down on december 29 12 00 et",
+      "price_yes": 0.969,
+      "price_no": 0.031000000000000028,
+      "volume": 17510.88,
+      "url": "https://opinion.trade/market/3314"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832778",
+    "roi_percent": 44.8,
+    "profit_margin": 0.44799999999999995,
+    "total_cost": 0.552,
+    "similarity_score": 88.19875776397515,
+    "polymarket": {
+      "market_id": "562004",
+      "title": "will marjorie taylor greene win the 2028 republican presidential nomination",
+      "price_yes": 0.022,
+      "price_no": 0.979,
+      "volume": 869463.016903,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-MTAY",
+      "title": "who will run for the republican presidential nomination in 2028 marjorie taylor greene",
+      "price_yes": 0.47,
+      "price_no": 0.53,
+      "volume": 23526.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-marjorie-taylor-greene/KX2028RRUN-28-MTAY"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832779",
+    "roi_percent": 40.2,
+    "profit_margin": 0.402,
+    "total_cost": 0.598,
+    "similarity_score": 86.33093525179856,
+    "polymarket": {
+      "market_id": "561975",
+      "title": "will marco rubio win the 2028 republican presidential nomination",
+      "price_yes": 0.088,
+      "price_no": 0.914,
+      "volume": 2675120.180642,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-MRUB",
+      "title": "who will run for the republican presidential nomination in 2028 marco rubio",
+      "price_yes": 0.49,
+      "price_no": 0.51,
+      "volume": 8664.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-marco-rubio/KX2028RRUN-28-MRUB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832780",
+    "roi_percent": 37.8,
+    "profit_margin": 0.378,
+    "total_cost": 0.622,
+    "similarity_score": 86.89655172413792,
+    "polymarket": {
+      "market_id": "561977",
+      "title": "will glenn youngkin win the 2028 republican presidential nomination",
+      "price_yes": 0.012,
+      "price_no": 0.989,
+      "volume": 1821010.473574,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-GYOU",
+      "title": "who will run for the republican presidential nomination in 2028 glenn youngkin",
+      "price_yes": 0.39,
+      "price_no": 0.61,
+      "volume": 3437.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-glenn-youngkin/KX2028RRUN-28-GYOU"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832782",
+    "roi_percent": 37.7,
+    "profit_margin": 0.377,
+    "total_cost": 0.623,
+    "similarity_score": 86.33093525179856,
+    "polymarket": {
+      "market_id": "561980",
+      "title": "will nikki haley win the 2028 republican presidential nomination",
+      "price_yes": 0.013,
+      "price_no": 0.988,
+      "volume": 2688166.00026,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-NHAL",
+      "title": "who will run for the republican presidential nomination in 2028 nikki haley",
+      "price_yes": 0.39,
+      "price_no": 0.61,
+      "volume": 1278.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-nikki-haley/KX2028RRUN-28-NHAL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832783",
+    "roi_percent": 33.599999999999994,
+    "profit_margin": 0.33599999999999997,
+    "total_cost": 0.664,
+    "similarity_score": 85.90604026845638,
+    "polymarket": {
+      "market_id": "561978",
+      "title": "will donald trump jr win the 2028 republican presidential nomination",
+      "price_yes": 0.024,
+      "price_no": 0.977,
+      "volume": 1325482.104671,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-DJTJR",
+      "title": "who will run for the republican presidential nomination in 2028 donald j trump jr",
+      "price_yes": 0.36,
+      "price_no": 0.64,
+      "volume": 17025.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-donald-j-trump-jr/KX2028RRUN-28-DJTJR"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832785",
+    "roi_percent": 32.99999999999999,
+    "profit_margin": 0.32999999999999996,
+    "total_cost": 0.67,
+    "similarity_score": 85.92592592592592,
+    "polymarket": {
+      "market_id": "561974",
+      "title": "will j d vance win the 2028 republican presidential nomination",
+      "price_yes": 0.55,
+      "price_no": 0.47,
+      "volume": 2659917.710444,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-JVAN",
+      "title": "who will run for the republican presidential nomination in 2028 j d vance",
+      "price_yes": 0.88,
+      "price_no": 0.12,
+      "volume": 4422.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-j-d-vance/KX2028RRUN-28-JVAN"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832786",
+    "roi_percent": 30.800000000000004,
+    "profit_margin": 0.30800000000000005,
+    "total_cost": 0.692,
+    "similarity_score": 86.33093525179856,
+    "polymarket": {
+      "market_id": "561988",
+      "title": "will josh hawley win the 2028 republican presidential nomination",
+      "price_yes": 0.012,
+      "price_no": 0.99,
+      "volume": 5578235.367597,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-JHAW",
+      "title": "who will run for the republican presidential nomination in 2028 josh hawley",
+      "price_yes": 0.32,
+      "price_no": 0.6799999999999999,
+      "volume": 1783.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-josh-hawley/KX2028RRUN-28-JHAW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832788",
+    "roi_percent": 29.000000000000004,
+    "profit_margin": 0.29000000000000004,
+    "total_cost": 0.71,
+    "similarity_score": 87.07482993197279,
+    "polymarket": {
+      "market_id": "561981",
+      "title": "will vivek ramaswamy win the 2028 republican presidential nomination",
+      "price_yes": 0.01,
+      "price_no": 0.991,
+      "volume": 3751314.763682,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-VRAM",
+      "title": "who will run for the republican presidential nomination in 2028 vivek ramaswamy",
+      "price_yes": 0.3,
+      "price_no": 0.7,
+      "volume": 5888.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-vivek-ramaswamy/KX2028RRUN-28-VRAM"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832789",
+    "roi_percent": 23.099999999999998,
+    "profit_margin": 0.23099999999999998,
+    "total_cost": 0.769,
+    "similarity_score": 87.74193548387098,
+    "polymarket": {
+      "market_id": "561984",
+      "title": "will robert f kennedy jr win the 2028 republican presidential nomination",
+      "price_yes": 0.009,
+      "price_no": 0.992,
+      "volume": 2044104.049024,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-RFK",
+      "title": "who will run for the republican presidential nomination in 2028 robert f kennedy jr",
+      "price_yes": 0.24,
+      "price_no": 0.76,
+      "volume": 4642.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-robert-f-kennedy-jr/KX2028RRUN-28-RFK"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832791",
+    "roi_percent": 22.4,
+    "profit_margin": 0.22399999999999998,
+    "total_cost": 0.776,
+    "similarity_score": 88.19875776397515,
+    "polymarket": {
+      "market_id": "561982",
+      "title": "will sarah huckabee sanders win the 2028 republican presidential nomination",
+      "price_yes": 0.006,
+      "price_no": 0.995,
+      "volume": 6956946.781164,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-SHS",
+      "title": "who will run for the republican presidential nomination in 2028 sarah huckabee sanders",
+      "price_yes": 0.23,
+      "price_no": 0.77,
+      "volume": 1054.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-sarah-huckabee-sanders/KX2028RRUN-28-SHS"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832793",
+    "roi_percent": 22.199999999999996,
+    "profit_margin": 0.22199999999999998,
+    "total_cost": 0.778,
+    "similarity_score": 86.89655172413792,
+    "polymarket": {
+      "market_id": "561996",
+      "title": "will tucker carlson win the 2028 republican presidential nomination",
+      "price_yes": 0.028,
+      "price_no": 0.974,
+      "volume": 1138463.040433,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-TUC",
+      "title": "who will run for the republican presidential nomination in 2028 tucker carlson",
+      "price_yes": 0.25,
+      "price_no": 0.75,
+      "volume": 5808.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-tucker-carlson/KX2028RRUN-28-TUC"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832794",
+    "roi_percent": 21.299999999999997,
+    "profit_margin": 0.21299999999999997,
+    "total_cost": 0.787,
+    "similarity_score": 87.8048780487805,
+    "polymarket": {
+      "market_id": "564398",
+      "title": "will pam bondi be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.007,
+      "price_no": 0.996,
+      "volume": 35052.258686,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-PB",
+      "title": "will pam bondi be the first person to leave the trump cabinet",
+      "price_yes": 0.22,
+      "price_no": 0.78,
+      "volume": 404002.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-pam-bondi-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-PB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832797",
+    "roi_percent": 21.199999999999996,
+    "profit_margin": 0.21199999999999997,
+    "total_cost": 0.788,
+    "similarity_score": 85.92592592592592,
+    "polymarket": {
+      "market_id": "562000",
+      "title": "will rand paul win the 2028 republican presidential nomination",
+      "price_yes": 0.008,
+      "price_no": 0.993,
+      "volume": 6765943.282476,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-RPAU",
+      "title": "who will run for the republican presidential nomination in 2028 rand paul",
+      "price_yes": 0.22,
+      "price_no": 0.78,
+      "volume": 2290.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-rand-paul/KX2028RRUN-28-RPAU"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832799",
+    "roi_percent": 17.999999999999993,
+    "profit_margin": 0.17999999999999994,
+    "total_cost": 0.8200000000000001,
+    "similarity_score": 86.7132867132867,
+    "polymarket": {
+      "market_id": "561976",
+      "title": "will tulsi gabbard win the 2028 republican presidential nomination",
+      "price_yes": 0.01,
+      "price_no": 0.992,
+      "volume": 3559869.11034,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-TGAB",
+      "title": "who will run for the republican presidential nomination in 2028 tulsi gabbard",
+      "price_yes": 0.19,
+      "price_no": 0.81,
+      "volume": 3148.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-tulsi-gabbard/KX2028RRUN-28-TGAB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832800",
+    "roi_percent": 14.900000000000002,
+    "profit_margin": 0.14900000000000002,
+    "total_cost": 0.851,
+    "similarity_score": 88.37209302325581,
+    "polymarket": {
+      "market_id": "564397",
+      "title": "will pete hegseth be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 62129.937672,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-PH",
+      "title": "will pete hegseth be the first person to leave the trump cabinet",
+      "price_yes": 0.15,
+      "price_no": 0.85,
+      "volume": 1016833.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-pete-hegseth-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-PH"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832803",
+    "roi_percent": 14.600000000000001,
+    "profit_margin": 0.14600000000000002,
+    "total_cost": 0.854,
+    "similarity_score": 88.18897637795276,
+    "polymarket": {
+      "market_id": "564409",
+      "title": "will kristi noem be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.004,
+      "price_no": 0.998,
+      "volume": 56065.227509,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-KN",
+      "title": "will kristi noem be the first person to leave the trump cabinet",
+      "price_yes": 0.15,
+      "price_no": 0.85,
+      "volume": 350057.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-kristi-noem-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-KN"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832806",
+    "roi_percent": 14.200000000000001,
+    "profit_margin": 0.14200000000000002,
+    "total_cost": 0.858,
+    "similarity_score": 86.13138686131387,
+    "polymarket": {
+      "market_id": "562002",
+      "title": "will erika kirk win the 2028 republican presidential nomination",
+      "price_yes": 0.008,
+      "price_no": 0.993,
+      "volume": 1125847.777935,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-EKIR",
+      "title": "who will run for the republican presidential nomination in 2028 erika kirk",
+      "price_yes": 0.15,
+      "price_no": 0.85,
+      "volume": 1371.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-erika-kirk/KX2028RRUN-28-EKIR"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832808",
+    "roi_percent": 11.099999999999998,
+    "profit_margin": 0.11099999999999999,
+    "total_cost": 0.889,
+    "similarity_score": 85.3146853146853,
+    "polymarket": {
+      "market_id": "561973",
+      "title": "will donald trump win the 2028 republican presidential nomination",
+      "price_yes": 0.049,
+      "price_no": 0.953,
+      "volume": 1400173.115218,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-DJT",
+      "title": "who will run for the republican presidential nomination in 2028 donald j trump",
+      "price_yes": 0.16,
+      "price_no": 0.84,
+      "volume": 6013.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-donald-j-trump/KX2028RRUN-28-DJT"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832810",
+    "roi_percent": 10.999999999999988,
+    "profit_margin": 0.10999999999999988,
+    "total_cost": 0.8900000000000001,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "679019",
+      "title": "will jordan bardella win the 2027 french presidential election",
+      "price_yes": 0.31,
+      "price_no": 0.71,
+      "volume": 21799.502698,
+      "url": "https://polymarket.com/event/next-french-presidential-election"
+    },
+    "opinion": {
+      "market_id": "KXFRENCHPRES-27-JBAR",
+      "title": "will jordan bardella win the 2027 french presidential election",
+      "price_yes": 0.42,
+      "price_no": 0.5800000000000001,
+      "volume": 2394.0,
+      "url": "https://kalshi.com/markets/KXFRENCHPRES-27/will-jordan-bardella-win-the-2027-french-presidential-election/KXFRENCHPRES-27-JBAR"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832813",
+    "roi_percent": 9.999999999999998,
+    "profit_margin": 0.09999999999999998,
+    "total_cost": 0.9,
+    "similarity_score": 89.03225806451613,
+    "polymarket": {
+      "market_id": "572854",
+      "title": "will west ham be relegated from the english premier league after the 2025 26 season",
+      "price_yes": 0.67,
+      "price_no": 0.36,
+      "volume": 26491.645487,
+      "url": "https://polymarket.com/event/epl-which-clubs-get-relegated"
+    },
+    "opinion": {
+      "market_id": "KXEPLRELEGATION-26-WHU",
+      "title": "will west ham be relegated from english premier league in 2025 26 season",
+      "price_yes": 0.77,
+      "price_no": 0.22999999999999998,
+      "volume": 6375.0,
+      "url": "https://kalshi.com/markets/KXEPLRELEGATION-26/will-west-ham-be-relegated-from-english-premier-league-in-2025-26-season/KXEPLRELEGATION-26-WHU"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832815",
+    "roi_percent": 9.799999999999997,
+    "profit_margin": 0.09799999999999998,
+    "total_cost": 0.902,
+    "similarity_score": 88.54961832061069,
+    "polymarket": {
+      "market_id": "564417",
+      "title": "will stephen miran be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.002,
+      "price_no": 0.999,
+      "volume": 74612.22278,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-SM",
+      "title": "will stephen miran be the first person to leave the trump cabinet",
+      "price_yes": 0.1,
+      "price_no": 0.9,
+      "volume": 245154.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-stephen-miran-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-SM"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832818",
+    "roi_percent": 7.899999999999996,
+    "profit_margin": 0.07899999999999996,
+    "total_cost": 0.921,
+    "similarity_score": 88.18897637795276,
+    "polymarket": {
+      "market_id": "564411",
+      "title": "will susie wiles be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 46306.656441,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-SW",
+      "title": "will susie wiles be the first person to leave the trump cabinet",
+      "price_yes": 0.08,
+      "price_no": 0.92,
+      "volume": 226965.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-susie-wiles-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-SW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832820",
+    "roi_percent": 6.999999999999995,
+    "profit_margin": 0.06999999999999995,
+    "total_cost": 0.93,
+    "similarity_score": 87.17948717948718,
+    "polymarket": {
+      "market_id": "836162",
+      "title": "elon musk trillionaire before 2027",
+      "price_yes": 0.62,
+      "price_no": 0.41000000000000003,
+      "volume": 82287.177931,
+      "url": "https://polymarket.com/event/elon-musk-trillionaire-before-2027"
+    },
+    "opinion": {
+      "market_id": "KXMUSKTRILLION-27",
+      "title": "will elon musk be a trillionaire before 2027",
+      "price_yes": 0.69,
+      "price_no": 0.31000000000000005,
+      "volume": 52798.0,
+      "url": "https://kalshi.com/markets/KXMUSKTRILLION/will-elon-musk-be-a-trillionaire-before-2027/KXMUSKTRILLION-27"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832823",
+    "roi_percent": 6.000000000000005,
+    "profit_margin": 0.06000000000000005,
+    "total_cost": 0.94,
+    "similarity_score": 92.5925925925926,
+    "polymarket": {
+      "market_id": "629085",
+      "title": "will the tampa bay lightning win the atlantic division",
+      "price_yes": 0.65,
+      "price_no": 0.36,
+      "volume": 4382.703691,
+      "url": "https://polymarket.com/event/nhl-atlantic-division-winner-747"
+    },
+    "opinion": {
+      "market_id": "KXNHLATLANTIC-26-TB",
+      "title": "will tampa bay lightning win the nhl atlantic division",
+      "price_yes": 0.58,
+      "price_no": 0.42000000000000004,
+      "volume": 9208.0,
+      "url": "https://kalshi.com/markets/KXNHLATLANTIC-26/will-tampa-bay-lightning-win-the-nhl-atlantic-division/KXNHLATLANTIC-26-TB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832827",
+    "roi_percent": 5.999999999999995,
+    "profit_margin": 0.05999999999999994,
+    "total_cost": 0.9400000000000001,
+    "similarity_score": 90.78947368421053,
+    "polymarket": {
+      "market_id": "569366",
+      "title": "will abelardo de la espriella win the 2026 colombian presidential election",
+      "price_yes": 0.38,
+      "price_no": 0.64,
+      "volume": 54229.565009,
+      "url": "https://polymarket.com/event/colombia-presidential-election"
+    },
+    "opinion": {
+      "market_id": "KXCOLOMBIAPRES-26-AESP",
+      "title": "will abelardo de la espriella win the the next colombian presidential election",
+      "price_yes": 0.44,
+      "price_no": 0.56,
+      "volume": 8447.0,
+      "url": "https://kalshi.com/markets/KXCOLOMBIAPRES-26/will-abelardo-de-la-espriella-win-the-the-next-colombian-presidential-election/KXCOLOMBIAPRES-26-AESP"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832829",
+    "roi_percent": 5.000000000000004,
+    "profit_margin": 0.050000000000000044,
+    "total_cost": 0.95,
+    "similarity_score": 85.92592592592592,
+    "polymarket": {
+      "market_id": "561990",
+      "title": "will elon musk win the 2028 republican presidential nomination",
+      "price_yes": 0.01,
+      "price_no": 0.991,
+      "volume": 8160457.544886,
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KX2028RRUN-28-EMUS",
+      "title": "who will run for the republican presidential nomination in 2028 elon musk",
+      "price_yes": 0.06,
+      "price_no": 0.94,
+      "volume": 1046.0,
+      "url": "https://kalshi.com/markets/KX2028RRUN-28/who-will-run-for-the-republican-presidential-nomination-in-2028-elon-musk/KX2028RRUN-28-EMUS"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832831",
+    "roi_percent": 5.000000000000004,
+    "profit_margin": 0.050000000000000044,
+    "total_cost": 0.95,
+    "similarity_score": 89.32038834951457,
+    "polymarket": {
+      "market_id": "645997",
+      "title": "will rachida dati win the paris mayor election",
+      "price_yes": 0.58,
+      "price_no": 0.44999999999999996,
+      "volume": 20405.914983,
+      "url": "https://polymarket.com/event/paris-mayoral-election"
+    },
+    "opinion": {
+      "market_id": "KXPARISMAYOR-26MAR15-RDAT",
+      "title": "will rachida dati win the the 2026 paris mayoral election",
+      "price_yes": 0.63,
+      "price_no": 0.37,
+      "volume": 1392.0,
+      "url": "https://kalshi.com/markets/KXPARISMAYOR-26MAR15/will-rachida-dati-win-the-the-2026-paris-mayoral-election/KXPARISMAYOR-26MAR15-RDAT"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832833",
+    "roi_percent": 4.999999999999993,
+    "profit_margin": 0.04999999999999993,
+    "total_cost": 0.9500000000000001,
+    "similarity_score": 96.06299212598425,
+    "polymarket": {
+      "market_id": "599324",
+      "title": "will janet mills be the democratic nominee for senate in maine",
+      "price_yes": 0.37,
+      "price_no": 0.65,
+      "volume": 112334.654275,
+      "url": "https://polymarket.com/event/maine-democratic-senate-primary-winner"
+    },
+    "opinion": {
+      "market_id": "KXSENATEMED-26-JM",
+      "title": "wil janet mills be the democratic nominee for the senate in maine",
+      "price_yes": 0.42,
+      "price_no": 0.5800000000000001,
+      "volume": 145486.0,
+      "url": "https://kalshi.com/markets/KXSENATEMED-26/wil-janet-mills-be-the-democratic-nominee-for-the-senate-in-maine/KXSENATEMED-26-JM"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832836",
+    "roi_percent": 4.900000000000004,
+    "profit_margin": 0.049000000000000044,
+    "total_cost": 0.951,
+    "similarity_score": 90.9090909090909,
+    "polymarket": {
+      "market_id": "561607",
+      "title": "will grok be the next ceo of x",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 576853.020337,
+      "url": "https://polymarket.com/event/next-ceo-of-x"
+    },
+    "opinion": {
+      "market_id": "KXNEWROLEX-26JAN-GROK4",
+      "title": "who will be the next ceo of x grok 4",
+      "price_yes": 0.05,
+      "price_no": 0.95,
+      "volume": 25752.0,
+      "url": "https://kalshi.com/markets/KXNEWROLEX-26JAN/who-will-be-the-next-ceo-of-x-grok-4/KXNEWROLEX-26JAN-GROK4"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832838",
+    "roi_percent": 4.900000000000004,
+    "profit_margin": 0.049000000000000044,
+    "total_cost": 0.951,
+    "similarity_score": 88.37209302325581,
+    "polymarket": {
+      "market_id": "564406",
+      "title": "will chris wright be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 15796.333352,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-CW",
+      "title": "will chris wright be the first person to leave the trump cabinet",
+      "price_yes": 0.05,
+      "price_no": 0.95,
+      "volume": 110344.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-chris-wright-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-CW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832840",
+    "roi_percent": 4.899999999999993,
+    "profit_margin": 0.04899999999999993,
+    "total_cost": 0.9510000000000001,
+    "similarity_score": 96.96969696969697,
+    "polymarket": {
+      "market_id": "703734",
+      "title": "will robert white jr win the 2026 democratic d c mayoral primary",
+      "price_yes": 0.031,
+      "price_no": 0.985,
+      "volume": 2780.0,
+      "url": "https://polymarket.com/event/who-will-win-the-2026-democratic-dc-mayoral-primary"
+    },
+    "opinion": {
+      "market_id": "KXDCMAYORD-26-RWHI",
+      "title": "who will win the 2026 d c democratic mayoral primary robert white jr",
+      "price_yes": 0.08,
+      "price_no": 0.92,
+      "volume": 1766.0,
+      "url": "https://kalshi.com/markets/KXDCMAYORD-26/who-will-win-the-2026-d-c-democratic-mayoral-primary-robert-white-jr/KXDCMAYORD-26-RWHI"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832842",
+    "roi_percent": 4.899999999999993,
+    "profit_margin": 0.04899999999999993,
+    "total_cost": 0.9510000000000001,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "586301",
+      "title": "supreme court rules in favor of trump s tariffs",
+      "price_yes": 0.32,
+      "price_no": 0.69,
+      "volume": 1607238.536554,
+      "url": "https://polymarket.com/event/will-the-supreme-court-rule-in-favor-of-trumps-tariffs"
+    },
+    "opinion": {
+      "market_id": "1546",
+      "title": "supreme court rules in favor of trump s tariffs",
+      "price_yes": 0.369,
+      "price_no": 0.631,
+      "volume": 3129892.764,
+      "url": "https://opinion.trade/market/1546"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832844",
+    "roi_percent": 4.100000000000003,
+    "profit_margin": 0.041000000000000036,
+    "total_cost": 0.959,
+    "similarity_score": 96.36363636363636,
+    "polymarket": {
+      "market_id": "572486",
+      "title": "will trump nominate michelle bowman as the next fed chair",
+      "price_yes": 0.019,
+      "price_no": 0.984,
+      "volume": 2132341.27322,
+      "url": "https://polymarket.com/event/who-will-trump-nominate-as-fed-chair"
+    },
+    "opinion": {
+      "market_id": "KXFEDCHAIRNOM-29-MBOW",
+      "title": "will trump next nominate michelle bowman as fed chair",
+      "price_yes": 0.06,
+      "price_no": 0.94,
+      "volume": 1287211.0,
+      "url": "https://kalshi.com/markets/KXFEDCHAIRNOM-29/will-trump-next-nominate-michelle-bowman-as-fed-chair/KXFEDCHAIRNOM-29-MBOW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832846",
+    "roi_percent": 4.0000000000000036,
+    "profit_margin": 0.040000000000000036,
+    "total_cost": 0.96,
+    "similarity_score": 91.89189189189189,
+    "polymarket": {
+      "market_id": "629031",
+      "title": "will rick caruso win the 2026 los angeles mayoral election",
+      "price_yes": 0.29,
+      "price_no": 0.74,
+      "volume": 1692.641743,
+      "url": "https://polymarket.com/event/los-angeles-mayoral-election-117"
+    },
+    "opinion": {
+      "market_id": "KXMAYORLA-26-RCAR",
+      "title": "who will win los angeles mayoral election rick caruso",
+      "price_yes": 0.33,
+      "price_no": 0.6699999999999999,
+      "volume": 8875.0,
+      "url": "https://kalshi.com/markets/KXMAYORLA-26/who-will-win-los-angeles-mayoral-election-rick-caruso/KXMAYORLA-26-RCAR"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832848",
+    "roi_percent": 3.8999999999999924,
+    "profit_margin": 0.038999999999999924,
+    "total_cost": 0.9610000000000001,
+    "similarity_score": 85.03937007874016,
+    "polymarket": {
+      "market_id": "838549",
+      "title": "will pam bondi be the first to leave the trump cabinet before 2027",
+      "price_yes": 0.181,
+      "price_no": 0.842,
+      "volume": 84219.896992,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet-828"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-PB",
+      "title": "will pam bondi be the first person to leave the trump cabinet",
+      "price_yes": 0.22,
+      "price_no": 0.78,
+      "volume": 404002.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-pam-bondi-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-PB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832850",
+    "roi_percent": 3.8000000000000034,
+    "profit_margin": 0.038000000000000034,
+    "total_cost": 0.962,
+    "similarity_score": 85.92592592592592,
+    "polymarket": {
+      "market_id": "838568",
+      "title": "will stephen miran be the first to leave the trump cabinet before 2027",
+      "price_yes": 0.062,
+      "price_no": 0.973,
+      "volume": 3481.292916,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet-828"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-SM",
+      "title": "will stephen miran be the first person to leave the trump cabinet",
+      "price_yes": 0.1,
+      "price_no": 0.9,
+      "volume": 245154.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-stephen-miran-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-SM"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832852",
+    "roi_percent": 3.600000000000003,
+    "profit_margin": 0.03600000000000003,
+    "total_cost": 0.964,
+    "similarity_score": 97.01492537313433,
+    "polymarket": {
+      "market_id": "704478",
+      "title": "will casey desantis be the republican nominee for florida governor",
+      "price_yes": 0.004,
+      "price_no": 0.998,
+      "volume": 1870.643017,
+      "url": "https://polymarket.com/event/republican-nominee-for-florida-governor"
+    },
+    "opinion": {
+      "market_id": "KXGOVFLNOMR-26-CDES",
+      "title": "wil casey desantis be the republican nominee for governor in florida",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 13119.0,
+      "url": "https://kalshi.com/markets/KXGOVFLNOMR-26/wil-casey-desantis-be-the-republican-nominee-for-governor-in-florida/KXGOVFLNOMR-26-CDES"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832854",
+    "roi_percent": 3.500000000000003,
+    "profit_margin": 0.03500000000000003,
+    "total_cost": 0.965,
+    "similarity_score": 86.95652173913044,
+    "polymarket": {
+      "market_id": "571770",
+      "title": "will the netherlands recognize palestine in 2025",
+      "price_yes": 0.005,
+      "price_no": 0.998,
+      "volume": 26580.040336,
+      "url": "https://polymarket.com/event/which-countries-will-recognize-palestine-in-2025"
+    },
+    "opinion": {
+      "market_id": "KXRECOGPALESTINE-25-NL",
+      "title": "who will recognize palestine the netherlands",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 8915.0,
+      "url": "https://kalshi.com/markets/KXRECOGPALESTINE-25/who-will-recognize-palestine-the-netherlands/KXRECOGPALESTINE-25-NL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832857",
+    "roi_percent": 3.200000000000003,
+    "profit_margin": 0.03200000000000003,
+    "total_cost": 0.968,
+    "similarity_score": 92.15686274509804,
+    "polymarket": {
+      "market_id": "566193",
+      "title": "will aston villa win the 2025 26 english premier league",
+      "price_yes": 0.038,
+      "price_no": 0.963,
+      "volume": 9368627.070465,
+      "url": "https://polymarket.com/event/english-premier-league-winner"
+    },
+    "opinion": {
+      "market_id": "KXPREMIERLEAGUE-26-AVL",
+      "title": "will aston villa win the english premier league",
+      "price_yes": 0.07,
+      "price_no": 0.9299999999999999,
+      "volume": 453977.0,
+      "url": "https://kalshi.com/markets/KXPREMIERLEAGUE-26/will-aston-villa-win-the-english-premier-league/KXPREMIERLEAGUE-26-AVL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832859",
+    "roi_percent": 3.1000000000000028,
+    "profit_margin": 0.031000000000000028,
+    "total_cost": 0.969,
+    "similarity_score": 92.3076923076923,
+    "polymarket": {
+      "market_id": "629081",
+      "title": "will the detroit red wings win the atlantic division",
+      "price_yes": 0.099,
+      "price_no": 0.947,
+      "volume": 1029.132907,
+      "url": "https://polymarket.com/event/nhl-atlantic-division-winner-747"
+    },
+    "opinion": {
+      "market_id": "KXNHLATLANTIC-26-DET",
+      "title": "will detroit red wings win the nhl atlantic division",
+      "price_yes": 0.13,
+      "price_no": 0.87,
+      "volume": 2344.0,
+      "url": "https://kalshi.com/markets/KXNHLATLANTIC-26/will-detroit-red-wings-win-the-nhl-atlantic-division/KXNHLATLANTIC-26-DET"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832861",
+    "roi_percent": 3.1000000000000028,
+    "profit_margin": 0.031000000000000028,
+    "total_cost": 0.969,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "994794",
+      "title": "will trump endorse jd vance for president before 2027",
+      "price_yes": 0.13,
+      "price_no": 0.88,
+      "volume": 9309.681075,
+      "url": "https://polymarket.com/event/will-trump-endorse-jd-vance-for-president-before-2027"
+    },
+    "opinion": {
+      "market_id": "3055",
+      "title": "will trump endorse jd vance for president before 2027",
+      "price_yes": 0.161,
+      "price_no": 0.839,
+      "volume": 853523.139,
+      "url": "https://opinion.trade/market/3055"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832863",
+    "roi_percent": 3.0000000000000027,
+    "profit_margin": 0.030000000000000027,
+    "total_cost": 0.97,
+    "similarity_score": 88.23529411764706,
+    "polymarket": {
+      "market_id": "566228",
+      "title": "will barcelona win the 2025 26 la liga",
+      "price_yes": 0.59,
+      "price_no": 0.43000000000000005,
+      "volume": 833231.284749,
+      "url": "https://polymarket.com/event/la-liga-winner-114"
+    },
+    "opinion": {
+      "market_id": "KXLALIGA-26-BAR",
+      "title": "will barcelona win the la liga",
+      "price_yes": 0.62,
+      "price_no": 0.38,
+      "volume": 651337.0,
+      "url": "https://kalshi.com/markets/KXLALIGA-26/will-barcelona-win-the-la-liga/KXLALIGA-26-BAR"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832865",
+    "roi_percent": 3.0000000000000027,
+    "profit_margin": 0.030000000000000027,
+    "total_cost": 0.97,
+    "similarity_score": 90.2439024390244,
+    "polymarket": {
+      "market_id": "566536",
+      "title": "will bayern munich win the 2025 26 bundesliga",
+      "price_yes": 0.96,
+      "price_no": 0.050000000000000044,
+      "volume": 58329.105434,
+      "url": "https://polymarket.com/event/bundesliga-winner-527"
+    },
+    "opinion": {
+      "market_id": "KXBUNDESLIGA-26-BMU",
+      "title": "will bayern munich win the bundesliga",
+      "price_yes": 0.99,
+      "price_no": 0.010000000000000009,
+      "volume": 66997.0,
+      "url": "https://kalshi.com/markets/KXBUNDESLIGA-26/will-bayern-munich-win-the-bundesliga/KXBUNDESLIGA-26-BMU"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832867",
+    "roi_percent": 3.0000000000000027,
+    "profit_margin": 0.030000000000000027,
+    "total_cost": 0.97,
+    "similarity_score": 89.39393939393939,
+    "polymarket": {
+      "market_id": "569363",
+      "title": "will sergio fajardo win the 2026 colombian presidential election",
+      "price_yes": 0.14,
+      "price_no": 0.87,
+      "volume": 26786.399038,
+      "url": "https://polymarket.com/event/colombia-presidential-election"
+    },
+    "opinion": {
+      "market_id": "KXCOLOMBIAPRES-26-SFAJ",
+      "title": "will sergio fajardo win the the next colombian presidential election",
+      "price_yes": 0.17,
+      "price_no": 0.83,
+      "volume": 1890.0,
+      "url": "https://kalshi.com/markets/KXCOLOMBIAPRES-26/will-sergio-fajardo-win-the-the-next-colombian-presidential-election/KXCOLOMBIAPRES-26-SFAJ"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832869",
+    "roi_percent": 3.0000000000000027,
+    "profit_margin": 0.030000000000000027,
+    "total_cost": 0.97,
+    "similarity_score": 91.48936170212765,
+    "polymarket": {
+      "market_id": "629052",
+      "title": "will the anaheim ducks win the pacific division",
+      "price_yes": 0.11,
+      "price_no": 0.92,
+      "volume": 5087.646206,
+      "url": "https://polymarket.com/event/nhl-pacific-division-winner-228"
+    },
+    "opinion": {
+      "market_id": "KXNHLPACIFIC-26-ANA",
+      "title": "will anaheim ducks win the nhl pacific division",
+      "price_yes": 0.14,
+      "price_no": 0.86,
+      "volume": 12464.0,
+      "url": "https://kalshi.com/markets/KXNHLPACIFIC-26/will-anaheim-ducks-win-the-nhl-pacific-division/KXNHLPACIFIC-26-ANA"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832871",
+    "roi_percent": 2.9999999999999916,
+    "profit_margin": 0.029999999999999916,
+    "total_cost": 0.9700000000000001,
+    "similarity_score": 92.5925925925926,
+    "polymarket": {
+      "market_id": "629059",
+      "title": "will the vegas golden knights win the pacific division",
+      "price_yes": 0.54,
+      "price_no": 0.52,
+      "volume": 6494.888178,
+      "url": "https://polymarket.com/event/nhl-pacific-division-winner-228"
+    },
+    "opinion": {
+      "market_id": "KXNHLPACIFIC-26-VGK",
+      "title": "will vegas golden knights win the nhl pacific division",
+      "price_yes": 0.57,
+      "price_no": 0.43000000000000005,
+      "volume": 2239.0,
+      "url": "https://kalshi.com/markets/KXNHLPACIFIC-26/will-vegas-golden-knights-win-the-nhl-pacific-division/KXNHLPACIFIC-26-VGK"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832873",
+    "roi_percent": 2.9000000000000026,
+    "profit_margin": 0.029000000000000026,
+    "total_cost": 0.971,
+    "similarity_score": 88.72180451127821,
+    "polymarket": {
+      "market_id": "564401",
+      "title": "will howard lutnick be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 20271.857078,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-HL",
+      "title": "will howard lutnick be the first person to leave the trump cabinet",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 210268.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-howard-lutnick-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-HL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832875",
+    "roi_percent": 2.9000000000000026,
+    "profit_margin": 0.029000000000000026,
+    "total_cost": 0.971,
+    "similarity_score": 89.5104895104895,
+    "polymarket": {
+      "market_id": "564403",
+      "title": "will robert f kennedy jr be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 31592.498052,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-RFK",
+      "title": "will robert f kennedy jr be the first person to leave the trump cabinet",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 156727.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-robert-f-kennedy-jr-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-RFK"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832877",
+    "roi_percent": 2.9000000000000026,
+    "profit_margin": 0.029000000000000026,
+    "total_cost": 0.971,
+    "similarity_score": 88.0,
+    "polymarket": {
+      "market_id": "564405",
+      "title": "will sean duffy be the first to leave the trump cabinet in 2025",
+      "price_yes": 0.001,
+      "price_no": 0.9995,
+      "volume": 14721.289372,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-SD",
+      "title": "will sean duffy be the first person to leave the trump cabinet",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 107100.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-sean-duffy-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-SD"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832878",
+    "roi_percent": 2.9000000000000026,
+    "profit_margin": 0.029000000000000026,
+    "total_cost": 0.971,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "693227",
+      "title": "tim cook out as apple ceo by march 31",
+      "price_yes": 0.15,
+      "price_no": 0.89,
+      "volume": 5831.27705,
+      "url": "https://polymarket.com/event/tim-cook-out-as-apple-ceo-by-march-31"
+    },
+    "opinion": {
+      "market_id": "2368",
+      "title": "tim cook out as apple ceo by march 31",
+      "price_yes": 0.081,
+      "price_no": 0.919,
+      "volume": 4240991.142,
+      "url": "https://opinion.trade/market/2368"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832880",
+    "roi_percent": 2.8000000000000025,
+    "profit_margin": 0.028000000000000025,
+    "total_cost": 0.972,
+    "similarity_score": 92.15686274509804,
+    "polymarket": {
+      "market_id": "629082",
+      "title": "will the florida panthers win the atlantic division",
+      "price_yes": 0.172,
+      "price_no": 0.85,
+      "volume": 24574.315803,
+      "url": "https://polymarket.com/event/nhl-atlantic-division-winner-747"
+    },
+    "opinion": {
+      "market_id": "KXNHLATLANTIC-26-FLA",
+      "title": "will florida panthers win the nhl atlantic division",
+      "price_yes": 0.2,
+      "price_no": 0.8,
+      "volume": 2272.0,
+      "url": "https://kalshi.com/markets/KXNHLATLANTIC-26/will-florida-panthers-win-the-nhl-atlantic-division/KXNHLATLANTIC-26-FLA"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832882",
+    "roi_percent": 2.7000000000000024,
+    "profit_margin": 0.027000000000000024,
+    "total_cost": 0.973,
+    "similarity_score": 87.02290076335878,
+    "polymarket": {
+      "market_id": "559658",
+      "title": "will kamala harris win the 2028 democratic presidential nomination",
+      "price_yes": 0.043,
+      "price_no": 0.959,
+      "volume": 3853831.822845,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-KH",
+      "title": "will kamala harris be the democratic presidential nominee in 2028",
+      "price_yes": 0.07,
+      "price_no": 0.9299999999999999,
+      "volume": 1539683.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-kamala-harris-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-KH"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832884",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 86.4,
+    "polymarket": {
+      "market_id": "559661",
+      "title": "will jon ossoff win the 2028 democratic presidential nomination",
+      "price_yes": 0.034,
+      "price_no": 0.967,
+      "volume": 2351948.702211,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-JOSS",
+      "title": "will jon ossoff be the democratic presidential nominee in 2028",
+      "price_yes": 0.06,
+      "price_no": 0.94,
+      "volume": 1128079.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-jon-ossoff-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-JOSS"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832886",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 94.5945945945946,
+    "polymarket": {
+      "market_id": "561603",
+      "title": "will elon musk be the next ceo of x",
+      "price_yes": 0.014,
+      "price_no": 0.99,
+      "volume": 272288.816113,
+      "url": "https://polymarket.com/event/next-ceo-of-x"
+    },
+    "opinion": {
+      "market_id": "KXNEWROLEX-26JAN-EMUS",
+      "title": "who will be the next ceo of x elon musk",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 226469.0,
+      "url": "https://kalshi.com/markets/KXNEWROLEX-26JAN/who-will-be-the-next-ceo-of-x-elon-musk/KXNEWROLEX-26JAN-EMUS"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832888",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 90.0,
+    "polymarket": {
+      "market_id": "566229",
+      "title": "will atletico madrid win the 2025 26 la liga",
+      "price_yes": 0.014,
+      "price_no": 0.988,
+      "volume": 809770.308512,
+      "url": "https://polymarket.com/event/la-liga-winner-114"
+    },
+    "opinion": {
+      "market_id": "KXLALIGA-26-ATM",
+      "title": "will atletico madrid win the la liga",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 108581.0,
+      "url": "https://kalshi.com/markets/KXLALIGA-26/will-atletico-madrid-win-the-la-liga/KXLALIGA-26-ATM"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832890",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 91.17647058823529,
+    "polymarket": {
+      "market_id": "566609",
+      "title": "will apple acquire perplexity in 2025",
+      "price_yes": 0.004,
+      "price_no": 0.999,
+      "volume": 10147.381867,
+      "url": "https://polymarket.com/event/will-apple-acquire-perplexity-in-2025"
+    },
+    "opinion": {
+      "market_id": "KXACUIREPERPLEXITY-25",
+      "title": "will acquire perplexity in 2025",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 9894.0,
+      "url": "https://kalshi.com/markets/KXACUIREPERPLEXITY-25/will-acquire-perplexity-in-2025/KXACUIREPERPLEXITY-25"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832892",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 85.49618320610686,
+    "polymarket": {
+      "market_id": "838560",
+      "title": "will kristi noem be the first to leave the trump cabinet before 2027",
+      "price_yes": 0.124,
+      "price_no": 0.892,
+      "volume": 85685.263866,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet-828"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-KN",
+      "title": "will kristi noem be the first person to leave the trump cabinet",
+      "price_yes": 0.15,
+      "price_no": 0.85,
+      "volume": 350057.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-kristi-noem-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-KN"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832894",
+    "roi_percent": 2.6000000000000023,
+    "profit_margin": 0.026000000000000023,
+    "total_cost": 0.974,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "680392",
+      "title": "will there be another us government shutdown by january 31",
+      "price_yes": 0.26,
+      "price_no": 0.75,
+      "volume": 498146.206277,
+      "url": "https://polymarket.com/event/will-there-be-another-us-government-shutdown-by-january-31"
+    },
+    "opinion": {
+      "market_id": "3114",
+      "title": "will there be another us government shutdown by january 31",
+      "price_yes": 0.224,
+      "price_no": 0.776,
+      "volume": 853710.683,
+      "url": "https://opinion.trade/market/3114"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832895",
+    "roi_percent": 2.400000000000002,
+    "profit_margin": 0.02400000000000002,
+    "total_cost": 0.976,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "540881",
+      "title": "gta vi released before june 2026",
+      "price_yes": 0.027,
+      "price_no": 0.976,
+      "volume": 190673.976172,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
+    },
+    "opinion": {
+      "market_id": "414",
+      "title": "gta vi released before june 2026",
+      "price_yes": 0.0,
+      "price_no": 1.0,
+      "volume": 2169136.36487992,
+      "url": "https://opinion.trade/market/414"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832898",
+    "roi_percent": 2.300000000000002,
+    "profit_margin": 0.02300000000000002,
+    "total_cost": 0.977,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "601820",
+      "title": "will jair bolsonaro win the 2026 brazilian presidential election",
+      "price_yes": 0.007,
+      "price_no": 0.995,
+      "volume": 863121.429622,
+      "url": "https://polymarket.com/event/brazil-presidential-election"
+    },
+    "opinion": {
+      "market_id": "KXBRPRES-26-JB",
+      "title": "will jair bolsonaro win the 2026 brazilian presidential election",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 6501.0,
+      "url": "https://kalshi.com/markets/KXBRPRES-26/will-jair-bolsonaro-win-the-2026-brazilian-presidential-election/KXBRPRES-26-JB"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832900",
+    "roi_percent": 2.200000000000002,
+    "profit_margin": 0.02200000000000002,
+    "total_cost": 0.978,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "627450",
+      "title": "first to 5k gold or eth",
+      "price_yes": 0.72,
+      "price_no": 0.30000000000000004,
+      "volume": 716921.801637,
+      "url": "https://polymarket.com/event/first-to-5k-gold-or-eth"
+    },
+    "opinion": {
+      "market_id": "1098",
+      "title": "first to 5k gold or eth",
+      "price_yes": 0.742,
+      "price_no": 0.258,
+      "volume": 2863656.645,
+      "url": "https://opinion.trade/market/1098"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832903",
+    "roi_percent": 2.100000000000002,
+    "profit_margin": 0.02100000000000002,
+    "total_cost": 0.979,
+    "similarity_score": 87.59124087591242,
+    "polymarket": {
+      "market_id": "559659",
+      "title": "will gretchen whitmer win the 2028 democratic presidential nomination",
+      "price_yes": 0.019,
+      "price_no": 0.982,
+      "volume": 2987063.709119,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-GW",
+      "title": "will gretchen whitmer be the democratic presidential nominee in 2028",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 869000.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-gretchen-whitmer-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-GW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832904",
+    "roi_percent": 2.100000000000002,
+    "profit_margin": 0.02100000000000002,
+    "total_cost": 0.979,
+    "similarity_score": 86.61417322834646,
+    "polymarket": {
+      "market_id": "559675",
+      "title": "will jon stewart win the 2028 democratic presidential nomination",
+      "price_yes": 0.009,
+      "price_no": 0.992,
+      "volume": 3917540.748842,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-JSTE",
+      "title": "will jon stewart be the democratic presidential nominee in 2028",
+      "price_yes": 0.03,
+      "price_no": 0.97,
+      "volume": 1065805.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-jon-stewart-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-JSTE"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832906",
+    "roi_percent": 2.100000000000002,
+    "profit_margin": 0.02100000000000002,
+    "total_cost": 0.979,
+    "similarity_score": 86.4,
+    "polymarket": {
+      "market_id": "559668",
+      "title": "will mark kelly win the 2028 democratic presidential nomination",
+      "price_yes": 0.019,
+      "price_no": 0.982,
+      "volume": 3494925.457675,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-MK",
+      "title": "will mark kelly be the democratic presidential nominee in 2028",
+      "price_yes": 0.04,
+      "price_no": 0.96,
+      "volume": 1788711.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-mark-kelly-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-MK"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832908",
+    "roi_percent": 2.100000000000002,
+    "profit_margin": 0.02100000000000002,
+    "total_cost": 0.979,
+    "similarity_score": 96.55172413793103,
+    "polymarket": {
+      "market_id": "572471",
+      "title": "will trump nominate christopher waller as the next fed chair",
+      "price_yes": 0.119,
+      "price_no": 0.882,
+      "volume": 2595964.928741,
+      "url": "https://polymarket.com/event/who-will-trump-nominate-as-fed-chair"
+    },
+    "opinion": {
+      "market_id": "KXFEDCHAIRNOM-29-CWAL",
+      "title": "will trump next nominate christopher waller as fed chair",
+      "price_yes": 0.14,
+      "price_no": 0.86,
+      "volume": 2518388.0,
+      "url": "https://kalshi.com/markets/KXFEDCHAIRNOM-29/will-trump-next-nominate-christopher-waller-as-fed-chair/KXFEDCHAIRNOM-29-CWAL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832910",
+    "roi_percent": 2.100000000000002,
+    "profit_margin": 0.02100000000000002,
+    "total_cost": 0.979,
+    "similarity_score": 100.0,
+    "polymarket": {
+      "market_id": "601821",
+      "title": "will fernando haddad win the 2026 brazilian presidential election",
+      "price_yes": 0.029,
+      "price_no": 0.973,
+      "volume": 745896.910221,
+      "url": "https://polymarket.com/event/brazil-presidential-election"
+    },
+    "opinion": {
+      "market_id": "KXBRPRES-26-FH",
+      "title": "will fernando haddad win the 2026 brazilian presidential election",
+      "price_yes": 0.05,
+      "price_no": 0.95,
+      "volume": 11748.0,
+      "url": "https://kalshi.com/markets/KXBRPRES-26/will-fernando-haddad-win-the-2026-brazilian-presidential-election/KXBRPRES-26-FH"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832912",
+    "roi_percent": 2.0000000000000018,
+    "profit_margin": 0.020000000000000018,
+    "total_cost": 0.98,
+    "similarity_score": 88.88888888888889,
+    "polymarket": {
+      "market_id": "559653",
+      "title": "will alexandria ocasio cortez win the 2028 democratic presidential nomination",
+      "price_yes": 0.14,
+      "price_no": 0.88,
+      "volume": 2264118.351415,
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028"
+    },
+    "opinion": {
+      "market_id": "KXPRESNOMD-28-AOC",
+      "title": "will alexandria ocasio cortez be the democratic presidential nominee in 2028",
+      "price_yes": 0.1,
+      "price_no": 0.9,
+      "volume": 1619861.0,
+      "url": "https://kalshi.com/markets/KXPRESNOMD-28/will-alexandria-ocasio-cortez-be-the-democratic-presidential-nominee-in-2028/KXPRESNOMD-28-AOC"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832913",
+    "roi_percent": 2.0000000000000018,
+    "profit_margin": 0.020000000000000018,
+    "total_cost": 0.98,
+    "similarity_score": 96.07843137254902,
+    "polymarket": {
+      "market_id": "572469",
+      "title": "will trump nominate kevin warsh as the next fed chair",
+      "price_yes": 0.33,
+      "price_no": 0.6799999999999999,
+      "volume": 2640259.735744,
+      "url": "https://polymarket.com/event/who-will-trump-nominate-as-fed-chair"
+    },
+    "opinion": {
+      "market_id": "KXFEDCHAIRNOM-29-KW",
+      "title": "will trump next nominate kevin warsh as fed chair",
+      "price_yes": 0.35,
+      "price_no": 0.65,
+      "volume": 2661668.0,
+      "url": "https://kalshi.com/markets/KXFEDCHAIRNOM-29/will-trump-next-nominate-kevin-warsh-as-fed-chair/KXFEDCHAIRNOM-29-KW"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832915",
+    "roi_percent": 2.0000000000000018,
+    "profit_margin": 0.020000000000000018,
+    "total_cost": 0.98,
+    "similarity_score": 96.2406015037594,
+    "polymarket": {
+      "market_id": "679229",
+      "title": "will james talarico be the democratic nominee for senate in texas",
+      "price_yes": 0.61,
+      "price_no": 0.4,
+      "volume": 19534.432652,
+      "url": "https://polymarket.com/event/texas-democratic-senate-primary-winner"
+    },
+    "opinion": {
+      "market_id": "KXSENATETXD-26-JTAL",
+      "title": "wil james talarico be the democratic nominee for the senate in texas",
+      "price_yes": 0.63,
+      "price_no": 0.37,
+      "volume": 259346.0,
+      "url": "https://kalshi.com/markets/KXSENATETXD-26/wil-james-talarico-be-the-democratic-nominee-for-the-senate-in-texas/KXSENATETXD-26-JTAL"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T14:01:05.832917",
+    "roi_percent": 2.0000000000000018,
+    "profit_margin": 0.020000000000000018,
+    "total_cost": 0.98,
+    "similarity_score": 85.71428571428572,
+    "polymarket": {
+      "market_id": "838548",
+      "title": "will pete hegseth be the first to leave the trump cabinet before 2027",
+      "price_yes": 0.13,
+      "price_no": 0.88,
+      "volume": 12248.117273,
+      "url": "https://polymarket.com/event/who-will-be-the-first-to-leave-the-trump-cabinet-828"
+    },
+    "opinion": {
+      "market_id": "KXCABOUT-29-PH",
+      "title": "will pete hegseth be the first person to leave the trump cabinet",
+      "price_yes": 0.15,
+      "price_no": 0.85,
+      "volume": 1016833.0,
+      "url": "https://kalshi.com/markets/KXCABOUT-29/will-pete-hegseth-be-the-first-person-to-leave-the-trump-cabinet/KXCABOUT-29-PH"
+    }
+  }
+]

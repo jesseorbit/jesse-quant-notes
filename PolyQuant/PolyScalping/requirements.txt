@@ -1,0 +1,10 @@
+py-clob-client
+aiohttp
+pydantic
+pydantic-settings
+python-dotenv
+loguru
+fastapi
+uvicorn[standard]
+websockets
+web3
