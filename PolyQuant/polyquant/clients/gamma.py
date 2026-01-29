@@ -193,23 +193,28 @@ class GammaClient:
         logger.info(f"Found {len(all_markets)} markets matching '{query_text}'")
         return all_markets[:limit]
     
-    def get_all_markets(self, max_markets: int = 1000) -> List[Dict[str, Any]]:
+    def get_all_markets(self, max_markets: int = 1000, **filters) -> List[Dict[str, Any]]:
         """
         Fetch all available markets with pagination.
         
         Args:
             max_markets: Maximum number of markets to fetch
+            **filters: Additional query filters (e.g., closed=False)
         
         Returns:
             List of all market dictionaries
         """
-        logger.info(f"Fetching all markets (max: {max_markets})")
+        logger.info(f"Fetching all markets (max: {max_markets}, filters: {filters})")
         
         all_markets = []
         offset = 0
         
         while len(all_markets) < max_markets:
-            batch = self.get_markets(limit=config.DEFAULT_PAGINATION_LIMIT, offset=offset)
+            batch = self.get_markets(
+                limit=config.DEFAULT_PAGINATION_LIMIT,
+                offset=offset,
+                **filters
+            )
             
             if not batch:
                 break

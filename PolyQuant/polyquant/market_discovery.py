@@ -201,7 +201,8 @@ def select_best_market(candidates: List[Dict[str, Any]]) -> Optional[Dict[str, A
 def discover_15min_markets(
     assets: List[str],
     gamma_client: GammaClient,
-    max_markets: int = 2000
+    max_markets: int = 2000,
+    active_only: bool = True
 ) -> Dict[str, Dict[str, Any]]:
     """
     Discover Up/Down markets for specified assets.
@@ -232,7 +233,11 @@ def discover_15min_markets(
     logger.info(f"Discovering Up/Down markets for assets: {assets}")
     
     # Fetch all markets
-    all_markets = gamma_client.get_all_markets(max_markets=max_markets)
+    filters = {}
+    if active_only:
+        filters["closed"] = False
+        
+    all_markets = gamma_client.get_all_markets(max_markets=max_markets, **filters)
     logger.info(f"Fetched {len(all_markets)} total markets")
     
     discovered = {}
@@ -248,6 +253,32 @@ def discover_15min_markets(
             question = market.get("question", "")
             description = market.get("description", "")
             combined_text = f"{question} {description}"
+
+            # Filter by active status if requested
+            if active_only:
+                # check if market is closed/resolved
+                if market.get("closed"):
+                    continue
+                    
+                # check end date
+                end_date_str = market.get("endDate") or market.get("end_date_iso")
+                if end_date_str:
+                    try:
+                        # Handle ISO format variations (sometimes with Z, sometimes without)
+                        if end_date_str.endswith("Z"):
+                            end_date_str = end_date_str[:-1]
+                        
+                        # Handle potential fractional seconds
+                        if "." in end_date_str:
+                             end_date_str = end_date_str.split(".")[0]
+                             
+                        end_date = datetime.fromisoformat(end_date_str)
+                        if end_date < datetime.utcnow():
+                            continue
+                    except (ValueError, TypeError):
+                        logger.warning(f"Could not parse end date: {end_date_str}")
+                        pass
+            
             
             # Note: We removed enableOrderBook and closed filters because:
             # 1. enableOrderBook is not reliably set in API responses (often N/A)

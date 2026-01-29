@@ -1,2 +1,616 @@
 /Users/jessesung/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
+============================================================
+PARAMETER OPTIMIZATION FOR DCA UNWIND STRATEGY
+============================================================
+
+Testing parameter combinations...
+This will take several minutes...
+
+Total combinations to test: 192
+
+[1/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15, 0.05), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765523700 to 1766128500
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.4211, WR=0.321, Entered=56
+[2/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15, 0.05), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765523700 to 1766128500
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.6159, WR=0.304, Entered=56
+[3/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15, 0.05), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765523700 to 1766128500
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.4173, WR=0.286, Entered=56
+[4/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15, 0.05), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765524600 to 1766129400
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.2003, WR=0.250, Entered=56
+[5/192] Testing: entry=0.25, hedge=0.6, dca=(0.2, 0.1), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765524600 to 1766129400
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.8884, WR=0.321, Entered=56
+[6/192] Testing: entry=0.25, hedge=0.6, dca=(0.2, 0.1), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765524600 to 1766129400
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.0046, WR=0.304, Entered=56
+[7/192] Testing: entry=0.25, hedge=0.6, dca=(0.2, 0.1), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765525500 to 1766130300
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.2618, WR=0.286, Entered=56
+[8/192] Testing: entry=0.25, hedge=0.6, dca=(0.2, 0.1), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765525500 to 1766130300
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.3576, WR=0.250, Entered=56
+[9/192] Testing: entry=0.25, hedge=0.6, dca=(0.3, 0.2, 0.1), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765525500 to 1766130300
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.5068, WR=0.321, Entered=56
+[10/192] Testing: entry=0.25, hedge=0.6, dca=(0.3, 0.2, 0.1), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765526400 to 1766131200
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.1935, WR=0.298, Entered=57
+[11/192] Testing: entry=0.25, hedge=0.6, dca=(0.3, 0.2, 0.1), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765526400 to 1766131200
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.2256, WR=0.281, Entered=57
+[12/192] Testing: entry=0.25, hedge=0.6, dca=(0.3, 0.2, 0.1), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765526400 to 1766131200
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.4743, WR=0.246, Entered=57
+[13/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765526400 to 1766131200
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.0565, WR=0.316, Entered=57
+[14/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765527300 to 1766132100
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.9511, WR=0.298, Entered=57
+[15/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765527300 to 1766132100
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.5066, WR=0.281, Entered=57
+[16/192] Testing: entry=0.25, hedge=0.6, dca=(0.25, 0.15), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765527300 to 1766132100
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.2776, WR=0.246, Entered=57
+[17/192] Testing: entry=0.25, hedge=0.65, dca=(0.25, 0.15, 0.05), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765528200 to 1766133000
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.4456, WR=0.310, Entered=58
+[18/192] Testing: entry=0.25, hedge=0.65, dca=(0.25, 0.15, 0.05), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765528200 to 1766133000
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.6338, WR=0.293, Entered=58
+[19/192] Testing: entry=0.25, hedge=0.65, dca=(0.25, 0.15, 0.05), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765528200 to 1766133000
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.9639, WR=0.276, Entered=58
+[20/192] Testing: entry=0.25, hedge=0.65, dca=(0.25, 0.15, 0.05), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765528200 to 1766133000
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.4213, WR=0.241, Entered=58
+[21/192] Testing: entry=0.25, hedge=0.65, dca=(0.2, 0.1), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765529100 to 1766133900
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.7527, WR=0.305, Entered=59
+[22/192] Testing: entry=0.25, hedge=0.65, dca=(0.2, 0.1), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765529100 to 1766133900
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-3.8630, WR=0.288, Entered=59
+[23/192] Testing: entry=0.25, hedge=0.65, dca=(0.2, 0.1), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765529100 to 1766133900
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-1.8000, WR=0.271, Entered=59
+[24/192] Testing: entry=0.25, hedge=0.65, dca=(0.2, 0.1), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765530000 to 1766134800
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-2.5732, WR=0.241, Entered=58
+[25/192] Testing: entry=0.25, hedge=0.65, dca=(0.3, 0.2, 0.1), force=3minScanning 7 days of 15m markets...
+Epoch range: 1765530000 to 1766134800
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.7183, WR=0.310, Entered=58
+[26/192] Testing: entry=0.25, hedge=0.65, dca=(0.3, 0.2, 0.1), force=5minScanning 7 days of 15m markets...
+Epoch range: 1765530000 to 1766134800
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+    Error fetching price history: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=30)
+  Found 150 markets, 0 not found
+  Found 160 markets, 0 not found
+  Found 170 markets, 0 not found
+  Found 180 markets, 0 not found
+  Found 190 markets, 0 not found
+ -> EV=-4.7925, WR=0.293, Entered=58
+[27/192] Testing: entry=0.25, hedge=0.65, dca=(0.3, 0.2, 0.1), force=7minScanning 7 days of 15m markets...
+Epoch range: 1765530900 to 1766135700
+  Found 10 markets, 0 not found
+  Found 20 markets, 0 not found
+  Found 30 markets, 0 not found
+  Found 40 markets, 0 not found
+  Found 50 markets, 0 not found
+  Found 60 markets, 0 not found
+  Found 70 markets, 0 not found
+  Found 80 markets, 0 not found
+  Found 90 markets, 0 not found
+  Found 100 markets, 0 not found
+  Found 110 markets, 0 not found
+  Found 120 markets, 0 not found
+  Found 130 markets, 0 not found
+  Found 140 markets, 0 not found
+    Error fetching price history: HTTPSConnectionPool(host='clob.polymarket.com', port=443): Read timed out. (read timeout=30)
+ -> EV=-0.1078, WR=0.316, Entered=38
+[28/192] Testing: entry=0.25, hedge=0.65, dca=(0.3, 0.2, 0.1), force=10minScanning 7 days of 15m markets...
+Epoch range: 1765533600 to 1766138400
+Traceback (most recent call last):
+  File "/Users/jessesung/PolyQuant/optimize_backtest_params.py", line 222, in <module>
+    main()
+  File "/Users/jessesung/PolyQuant/optimize_backtest_params.py", line 167, in main
+    result = run_backtest_with_params(
+  File "/Users/jessesung/PolyQuant/optimize_backtest_params.py", line 77, in run_backtest_with_params
+    entered = df[df["entered"] == True]
+  File "/Users/jessesung/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/jessesung/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'entered'
