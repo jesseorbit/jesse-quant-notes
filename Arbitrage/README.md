@@ -1,133 +1,157 @@
 # Prediction Market Arbitrage Scanner
 
-실시간으로 Polymarket, Kalshi, Opinion Labs의 예측 시장을 스캔하여 무위험 차익거래 기회를 찾는 도구입니다.
+A real-time scanner that monitors **Polymarket**, **Kalshi**, and **Opinion Labs** to surface **risk-free arbitrage** opportunities across prediction markets.
+
+---
 
 ## 🎯 Features
+- **Multi-venue support**: Polymarket, Kalshi, Opinion Labs
+- **Real-time data ingestion**: via each venue’s official API
+- **Smart market matching**: automatic event alignment using fuzzy matching
+- **Arbitrage detection**: identifies risk-free combinations and computes ROI
+- **Async-first architecture**: fast collection with `async/await`
 
-- **다중 플랫폼 지원**: Polymarket, Kalshi, Opinion Labs 연동
-- **실시간 데이터 수집**: 각 플랫폼의 공식 API 사용
-- **지능형 매칭**: Fuzzy matching을 통한 동일 이벤트 자동 식별
-- **차익거래 계산**: 무위험 수익 기회 자동 탐지 및 ROI 계산
-- **비동기 처리**: 빠른 데이터 수집을 위한 async/await 구현
+---
 
-## 🏢 지원 플랫폼
+## 🏢 Supported Platforms
 
-| 플랫폼 | API 인증 | 상태 |
-|--------|----------|------|
-| **Polymarket** | 불필요 | ✅ 항상 활성화 |
-| **Kalshi** | 불필요 | ✅ 항상 활성화 |
-| **Opinion Labs** | API Key 필요 | ⚠️ 선택적 |
+| Platform      | API Auth Required | Status |
+|--------------|-------------------|--------|
+| Polymarket   | No                | ✅ Always on |
+| Kalshi       | No                | ✅ Always on |
+| Opinion Labs | Yes (API Key)     | ⚠️ Optional |
+
+---
 
 ## 📁 Project Structure
 
 ```
+
 Arbitrage/
-├── main.py                 # 메인 실행 스크립트
-├── models.py              # 데이터 모델 정의
-├── matcher.py             # Fuzzy matching 엔진
+├── main.py                  # Main entry point
+├── models.py                # Data model definitions
+├── matcher.py               # Fuzzy matching engine
 ├── services/
-│   ├── __init__.py
-│   ├── polymarket.py      # Polymarket 데이터 수집
-│   └── opinion.py         # Opinion Labs 데이터 수집
+│   ├── **init**.py
+│   ├── polymarket.py        # Polymarket data collector
+│   └── opinion.py           # Opinion Labs data collector
 ├── utils/
-│   ├── __init__.py
-│   └── text_processing.py # 텍스트 정규화 유틸리티
-├── requirements.txt       # Python 의존성
-└── README.md             # 이 파일
-```
+│   ├── **init**.py
+│   └── text_processing.py   # Text normalization utilities
+├── requirements.txt         # Python dependencies
+└── README.md                # This file
+
+````
+
+---
 
 ## 🚀 Quick Start
 
-### 1. 의존성 설치
-
+### 1) Install dependencies
 ```bash
 cd Arbitrage
 pip install -r requirements.txt
-```
+````
 
-### 2. Opinion Labs API Key 설정
+### 2) Set Opinion Labs API Key (optional)
 
-Opinion Labs API를 사용하려면 API key가 필요합니다.
+To enable Opinion Labs scanning, you need an API key.
 
-**API Key 받기**:
-1. [Opinion Labs API 신청 폼](https://docs.opinion.trade/) 작성
-2. API key 받기
+**Get an API key**
 
-**설정 방법**:
+* Fill out the Opinion Labs API request form
+* Receive your API key
+
+**Configure**
 
 ```bash
-# 방법 1: 환경 변수 설정
+# Option 1: Environment variable
 export OPINION_API_KEY="your_api_key_here"
 
-# 방법 2: .env 파일 생성
+# Option 2: .env file
 cp .env.example .env
-# .env 파일을 열어서 API key 입력
+# Open .env and paste your key
 ```
 
-### 3. 스캐너 실행
+### 3) Run the scanner
 
 ```bash
 python main.py
 ```
 
+---
+
 ## 📊 How It Works
 
-### 1. Data Collection (데이터 수집)
+### 1) Data Collection
 
 **Polymarket (Gamma API)**
-- Endpoint: `GET https://gamma-api.polymarket.com/events`
-- Parameters: `active=true`, `closed=false`, `limit=100`
-- Parsing: `outcomePrices[0]` = YES, `outcomePrices[1]` = NO
-- 인증: 불필요
+
+* Endpoint: `GET https://gamma-api.polymarket.com/events`
+* Params: `active=true`, `closed=false`, `limit=100`
+* Parsing: `outcomePrices[0] = YES`, `outcomePrices[1] = NO`
+* Auth: not required
 
 **Kalshi**
-- Endpoint: `GET https://api.elections.kalshi.com/trade-api/v2/markets`
-- Parameters: `status=open`, `limit=100`
-- Parsing: `yes_price` (cents → decimal), `no_price` (cents → decimal)
-- 인증: 불필요
+
+* Endpoint: `GET https://api.elections.kalshi.com/trade-api/v2/markets`
+* Params: `status=open`, `limit=100`
+* Parsing: `yes_price` (cents → decimal), `no_price` (cents → decimal)
+* Auth: not required
 
 **Opinion Labs**
-- Endpoint: `GET https://proxy.opinion.trade:8443/openapi/market`
-- Parameters: `limit=100`
-- Headers: `apikey: your_api_key`
-- Parsing: `yes_price`, `no_price` 또는 `probability` 필드 사용
-- 인증: API Key 필요
 
-### 2. Data Normalization (정규화)
+* Endpoint: `GET https://proxy.opinion.trade:8443/openapi/market`
+* Params: `limit=100`
+* Headers: `apikey: <your_api_key>`
+* Parsing: uses `yes_price`, `no_price`, or `probability` fields depending on payload
+* Auth: API key required
 
-모든 마켓 데이터를 `StandardMarket` 형식으로 변환:
+---
+
+### 2) Data Normalization
+
+All venue-specific markets are converted into a unified `StandardMarket` format:
+
 ```python
 @dataclass
 class StandardMarket:
-    platform: str        # 'POLY' or 'OPINION'
-    market_id: str       # 플랫폼별 고유 ID
-    title: str           # 정규화된 제목
-    price_yes: float     # YES 가격 (0.0 ~ 1.0)
-    price_no: float      # NO 가격 (0.0 ~ 1.0)
-    volume: float        # 거래량 (USD)
-    url: str             # 마켓 링크
+    platform: str        # e.g. 'POLY', 'KALSHI', 'OPINION'
+    market_id: str       # Venue-specific unique ID
+    title: str           # Normalized title
+    price_yes: float     # YES price (0.0 ~ 1.0)
+    price_no: float      # NO price (0.0 ~ 1.0)
+    volume: float        # Volume (USD)
+    url: str             # Market URL
 ```
 
-### 3. Fuzzy Matching (퍼지 매칭)
+---
 
-- **Algorithm**: `rapidfuzz.fuzz.token_sort_ratio`
-- **Threshold**: 유사도 85점 이상
-- **Validation**: 최소 2개 이상의 공통 키워드 확인
+### 3) Fuzzy Matching
 
-### 4. Arbitrage Calculation (차익거래 계산)
+* Algorithm: `rapidfuzz.fuzz.token_sort_ratio`
+* Threshold: similarity score ≥ **85**
+* Validation: at least **2 shared keywords**
 
-**전략**:
-- Strategy 1: Polymarket YES + Opinion NO
-- Strategy 2: Polymarket NO + Opinion YES
+---
 
-**조건**:
-- Total Cost < 0.98 (최소 2% 마진 확보)
-- Profit = 1.0 - Total Cost
+### 4) Arbitrage Calculation
 
-**ROI 계산**:
-```
-ROI% = (Profit / Total Cost) × 100
-```
+**Strategies**
+
+* Strategy 1: Buy **Polymarket YES** + Buy **Opinion NO**
+* Strategy 2: Buy **Polymarket NO** + Buy **Opinion YES**
+
+**Condition**
+
+* `Total Cost < 0.98` (require at least **2%** margin)
+* `Profit = 1.0 - Total Cost`
+
+**ROI**
+
+* `ROI% = (Profit / Total Cost) × 100`
+
+---
 
 ## 📈 Output Example
 
@@ -155,46 +179,58 @@ Opinion Labs:
   URL: https://opinion.trade/market/btc-100k-2024
 ```
 
+---
+
 ## 🔧 Configuration
 
-`main.py`에서 설정 변경 가능:
+Adjust settings in `main.py`:
 
 ```python
-# Matching 설정
+# Matching configuration
 matcher = MarketMatcher(
-    similarity_threshold=85.0,  # 유사도 임계값 (0-100)
-    min_common_keywords=2       # 최소 공통 키워드 수
+    similarity_threshold=85.0,  # Similarity threshold (0-100)
+    min_common_keywords=2       # Minimum number of shared keywords
 )
 
-# Arbitrage 설정
+# Arbitrage configuration
 opportunities = matcher.calculate_arbitrage(
     matches,
-    min_margin=0.02,  # 최소 수익률 (2%)
-    max_cost=0.98     # 최대 비용 (98%)
+    min_margin=0.02,  # Minimum margin (2%)
+    max_cost=0.98     # Maximum total cost (98%)
 )
 ```
 
+---
+
 ## 📝 Output Files
 
-- `arbitrage_results.json`: 발견된 차익거래 기회 상세 정보
-- `arbitrage_scanner.log`: 실행 로그
+* `arbitrage_results.json`: detailed opportunity dump
+* `arbitrage_scanner.log`: runtime logs
+
+---
 
 ## ⚠️ Important Notes
 
-1. **API Rate Limits**: 각 플랫폼의 API rate limit을 준수하세요
-2. **수수료 고려**: 실제 거래 시 플랫폼 수수료를 반드시 고려하세요
-3. **가격 변동**: 실시간 가격은 빠르게 변동될 수 있습니다
-4. **리스크**: 이 도구는 교육 목적이며, 실제 거래 시 손실 가능성이 있습니다
+* **API rate limits**: respect each venue’s API limits
+* **Fees**: include platform fees in real trading decisions
+* **Price movement**: quotes can move quickly in real time
+* **Risk disclaimer**: for educational use; real trading can lose money
+
+---
 
 ## 🔮 Future Enhancements
 
-- [ ] FastAPI 웹 서버 구현
-- [ ] Next.js 대시보드 UI
-- [ ] 실시간 WebSocket 업데이트
-- [ ] 알림 시스템 (Telegram/Discord)
-- [ ] 백테스팅 기능
-- [ ] 자동 거래 실행 (선택적)
+* FastAPI server
+* Next.js dashboard UI
+* Real-time updates via WebSockets
+* Alerting (Telegram/Discord)
+* Backtesting
+* Optional auto-execution
+
+---
 
 ## 📄 License
 
 MIT License
+
+```
